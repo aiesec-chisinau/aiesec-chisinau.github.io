@@ -4,11 +4,6 @@ body {
     background-color: #fff;
   }
   
-  #under_nav_header
-{
-    height: 58px;
-}
-
   .topnav {
     overflow: hidden;
     background-color: #333;
@@ -58,7 +53,11 @@ body {
       display: block;
       text-align: left;
     }
-  }body {
+    #under_nav_header{
+        height: 0px;
+      }
+  }
+  body {
     margin: 0;
     font-family: Helvetica, sans-serif;
     background-color: #f4f4f4;
@@ -71,9 +70,8 @@ body {
   /* header */
   
   .header {
-    /* background-color: #fff; */
-    position: absolute;
-    top: 0;
+    background-color: #fff;
+    position: fixed;
     width: 100%;
     z-index: 3;
   }
@@ -83,13 +81,13 @@ body {
     padding: 0;
     list-style: none;
     overflow: hidden;
-    background-color: transparent;
+    background-color: #fff;
   }
   
   .header li a {
     display: block;
     padding: 20px 20px;
-    
+    border-right: 1px solid #f4f4f4;
     text-decoration: none;
   }
   
@@ -127,17 +125,12 @@ body {
   
   .header .menu-icon .navicon {
     background: #333;
-   
     display: block;
     height: 2px;
     position: relative;
-    transition: background .2s linear;
+    transition: background .2s ease-out;
     width: 18px;
-    -webkit-transition: background .2s linear;
-    -moz-transition: background .2s linear;
-    -ms-transition: background .2s linear;
-    -o-transition: background .2s linear;
-}
+  }
   
   .header .menu-icon .navicon:before,
   .header .menu-icon .navicon:after {
@@ -202,5 +195,8 @@ body {
     .header .menu-icon {
       display: none;
     }
+    
   }
-  
+  #under_nav_header{
+    height: 57px;
+  }
