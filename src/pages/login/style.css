@@ -1,0 +1,18 @@
+#logo_img_login{
+    position: absolute;
+    top: 20px;
+    left: 20px;
+}
+.center-div {
+    position: static;
+    margin: auto;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    max-width: 358px;
+    align-items:center;
+    vertical-align: middle;
+}
+
