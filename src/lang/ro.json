@@ -1,0 +1,13 @@
+{
+    "navbar": {
+      "home": "Acasa",
+      "about": "Despre",
+      "contact": "Contact",
+      "projects":"Proiectele noastre",
+      "login": "Logare"
+    },
+    "home": {
+        "welcome": "ro"
+    }
+   
+}

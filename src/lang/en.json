@@ -1,0 +1,13 @@
+{
+    "navbar": {
+      "home": "Home",
+      "about": "About",
+      "contact": "Contact",
+      "projects":"Our Projects",
+      "login": "Login"
+    },
+    "home": {
+        "welcome": "en"
+    }
+   
+}
