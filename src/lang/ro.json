@@ -13,9 +13,19 @@
     "login": {
         "goback": "inapoi"
     },
-    "about":{
+    "about": {
         "page_title":"AIESEC în Chisinau",
-        "how_are_we":"Cine suntem?"
+        "who_are_we":"Cine suntem?",
+      "who_are_we_text1": "Suntem ",
+      "who_are_we_text2":"cea mai mare organizație de voluntariat din lume",
+      "who_are_we_text3":", cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.",
+      "who_are_we_text4":"Voluntarii noștri ",
+      "who_are_we_text5":"sunt tineri, studenți sau elevi, cu vârsta cuprinsă între ",
+      "who_are_we_text6":"18 și 30 ani.",
+      "who_are_we_text7":"Ei sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership.",
+      "our_volunteers":"Voluntarii noștri",
+      "our_volunteers_text1": "În fiecare an, în luna Septembrie și Februarie, orice tânăr poate deveni voluntar AIESEC în Chișinău.",
+      "our_volunteers_text2": "Te invităm să aplici și să ne cunoști AIESEC din interior, alături de voluntarii noștri."
     }
-   
+
 }

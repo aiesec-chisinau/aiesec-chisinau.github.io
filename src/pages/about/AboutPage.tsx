@@ -34,13 +34,62 @@ const handleChange = (event: { target: { value: any; }; }) => {
        <h1 style={{textAlign: "center"}}>{t("navbar.about")}</h1>
        <p style={{textAlign: "center"}}><i>"Activating </i><b>youth  leadership</b> <i>    since 1948 "</i></p>
        <br/>
-<div id='about_page_layout'>
+            <div id='about_page_layout'>
 
-  
-       sss
+                <div className='about_content'>
+                    <div className='about_inline_left'>
+                        <h2>
+                            {t("about.who_are_we")}
 
-    </div>
-    </div>
+                        </h2>
+
+                        &emsp; {t("about.who_are_we_text1")}
+                        <b>{t("about.who_are_we_text2")}</b>
+                        {t("about.who_are_we_text3")}<br/><br/>
+                        &emsp;<b>{t("about.who_are_we_text4")}</b>
+                        {t("about.who_are_we_text5")}
+                        <b>{t("about.who_are_we_text6")}</b>
+                        <br/><br/>
+                        &emsp;{t("about.who_are_we_text7")}
+                    </div>
+                    <div className='about_inline_right about_photo'>
+                        <img src='/images/logo.png' height={'20px'}/>
+                    </div>
+                </div>
+                <br/>
+
+
+            </div>
+        </div>
+            <br/><br/><br/>
+        <div id='about_page_layout'>
+
+            <div className='about_content'>
+                <div className='about_inline_left about_photo'>
+                    <img src='/images/logo.png' height={'20px'}/>
+                </div>
+                <div className='about_inline_right '>
+
+
+                    <h2>
+                        {t("about.our_volunteers")}
+
+                    </h2>
+
+                    &emsp; {t("about.our_volunteers_text1")}
+                    <br/><br/>
+                    &emsp;{t("about.our_volunteers_text2")}
+
+
+
+
+                </div>
+            </div>
+            <br/>
+
+
+        </div>
+
       </>
         
       )
