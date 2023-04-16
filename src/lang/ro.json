@@ -1,7 +1,7 @@
 {
     "navbar": {
       "home": "Acasa",
-      "about": "Despre",
+      "about": "Despre noi",
       "contact": "Contact",
       "projects":"Proiectele noastre",
       "login": "Logare",
@@ -12,6 +12,10 @@
     },
     "login": {
         "goback": "inapoi"
+    },
+    "about":{
+        "page_title":"AIESEC în Chisinau",
+        "how_are_we":"Cine suntem?"
     }
    
 }

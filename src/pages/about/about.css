@@ -1,0 +1,14 @@
+
+#about_page_layout{
+    display: flex;
+   
+    justify-content: center;
+}
+
+.about_content{
+    max-width: 800px;
+    display: inline
+}
+.about_inline{
+   
+}

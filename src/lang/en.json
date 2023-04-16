@@ -1,7 +1,7 @@
 {
     "navbar": {
       "home": "Home",
-      "about": "About",
+      "about": "About us",
       "contact": "Contact",
       "projects":"Our Projects",
       "login": "Login",
@@ -12,6 +12,10 @@
     },
     "login": {
         "goback": "go back"
+    },
+    "about":{
+        "page_title":"AIESEC in Chisinau",
+        "how_are_we":"How are we?"
     }
    
 }
