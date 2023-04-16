@@ -4,10 +4,14 @@
       "about": "Despre",
       "contact": "Contact",
       "projects":"Proiectele noastre",
-      "login": "Logare"
+      "login": "Logare",
+      "language":"Limba"
     },
     "home": {
         "welcome": "ro"
+    },
+    "login": {
+        "goback": "inapoi"
     }
    
 }

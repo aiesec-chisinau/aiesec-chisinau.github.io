@@ -35,9 +35,11 @@ const handleChange = (event: { target: { value: any; }; }) => {
         <li><Link to="/about">{t("navbar.about")}</Link></li>
         
           <li><Link to="/contact">{t("navbar.contact")}</Link></li>
+         
           <li><Link to="/login">{t("navbar.login")}</Link></li>
-          <li>
-            <select  value={i18n.language} onChange={onClickLanguageChange}>
+          <li id="li_lang_selection">
+          <span className="inline" id="lang_description" >{t("navbar.language")}: </span>
+            <select className="inline" id="lang_selection" value={i18n.language} onChange={onClickLanguageChange}>
         <option value="en" >en</option>
         <option value="ro" >ro</option>
        
