@@ -7,7 +7,7 @@ const ContactPage: React.FC = () => {
        <Navbar />
      
       <h1>Contact us</h1>
-      <p>Here's some information Contact me.</p>
+      <p>Here's some information abut how to contact us.</p>
     </div>
   );
 };

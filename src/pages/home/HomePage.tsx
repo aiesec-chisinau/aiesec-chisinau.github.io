@@ -13,18 +13,10 @@ const HomePage: React.FC = () => {
     <div>
       <Navbar />
 
-      <div >
-       
 
-           
-                {t("home.welcome")} <br/>
-                
-            
-            
-        </div>
      
       <h1>Home</h1>
-      <p>Here's some information about me.</p>
+
     </div>
   );
 };
