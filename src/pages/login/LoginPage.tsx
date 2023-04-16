@@ -12,29 +12,11 @@ interface User {
 }
 const LoginPage: React.FC = () => {
 
-
   const { t, i18n } = useTranslation('home');
 
 
-  
-  const [user, setUser] = useState<User>({ email: '', password: '' });
-  const [error, setError] = useState<string>('');
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
-    const { name, value } = event.target;
-    setUser(prevUser => ({ ...prevUser, [name]: value }));
-  };
 
-  const handleLogin = async () => {
-    try {
-      const { data } = await axios.post('/api/login', user);
-      localStorage.setItem('token', data.token);
-      setError('');
-      // Redirect to home page
-    } catch (err) {
-      //setError(err.response.data.message);
-    }
-  };
 
 
 
@@ -49,7 +31,7 @@ const LoginPage: React.FC = () => {
 
     <div className="container">
   <div className="child">
-    aaa
+   comming soon
   </div>
 </div>
    
