@@ -15,7 +15,7 @@ const HomePage: React.FC = () => {
 
 
      
-      <h1>Home</h1>
+      <h1>{t("home.home")}</h1>
 
     </div>
   );

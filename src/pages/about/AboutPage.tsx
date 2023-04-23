@@ -53,7 +53,7 @@ const handleChange = (event: { target: { value: any; }; }) => {
                         &emsp;{t("about.who_are_we_text7")}
                     </div>
                     <div className='about_inline_right about_photo'>
-                        <img src='/images/logo.png' height={'20px'}/>
+                        <img src='/images/blue_logo.png' height={'20px'}/>
                     </div>
                 </div>
                 <br/>
@@ -66,7 +66,7 @@ const handleChange = (event: { target: { value: any; }; }) => {
 
             <div className='about_content'>
                 <div className='about_inline_left about_photo'>
-                    <img src='/images/logo.png' height={'20px'}/>
+                    <img src='/images/blue_logo.png' height={'20px'}/>
                 </div>
                 <div className='about_inline_right '>
 

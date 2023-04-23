@@ -1,238 +1,90 @@
-body {
-    margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    background-color: #fff;
-  }
-  
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  .topnav a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
-  
-  .topnav a.active {
-    background-color: #04AA6D;
-    color: white;
-  }
-  
-  .topnav .icon {
-    display: none;
-  }
-  #lang_description{
-    display: none;
-  }
-
-
- 
-
-  #li_lang_selection{
-  padding: 20px 5px;
-  
+#navbar-style {
+  background-color: #037ef3 /*rgba(255,255,255,0.8)*/;
+  color: rgb(6, 32, 39);
+  box-shadow: none !important;
 }
-  #lang_selection{
-    font-size: 15px;
-   
-    border: 0;
-    display: flex;
-    
-    
-  }
-  @media screen and (max-width: 600px) {
-    .topnav a:not(:first-child) {display: none;}
-    .topnav a.icon {
-      float: right;
-      display: block;
-    }
-    #lang_description{
-      display: block;
-    }
-    #li_lang_selection{
-      padding: 20px 20px;
-      display: flex;
-      
-    }
-  }
-  
-  @media screen and (max-width: 600px) {
-    .topnav.responsive {position: relative;}
-    .topnav.responsive .icon {
-      position: absolute;
-      right: 0;
-      top: 0;
-    }
-    .topnav.responsive a {
-      float: none;
-      display: block;
-      text-align: left;
-    }
-    #under_nav_header{
-        height: 0px;
-      }
-     
-    
-  }
-  body {
-    margin: 0;
-    font-family: Helvetica, sans-serif;
-    background-color: #f4f4f4;
-  }
-  
-  a {
-    color: #000;
-  }
-  
-  /* header */
-  
-  .header {
-    background-color: #fff;
-    position: fixed;
-    width: 100%;
-    z-index: 3;
-  }
-  
-  .header ul {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    overflow: hidden;
-    background-color: #fff;
-  }
-  
-  .header li a {
-    display: block;
-    padding: 20px 20px;
-    border-right: 1px solid #f4f4f4;
-    text-decoration: none;
-  }
-  
-  .header li a:hover,
-  .header .menu-btn:hover {
-    background-color: #f4f4f4;
-  }
-  
-  .header .logo {
-    display: block;
-    float: left;
-    font-size: 2em;
-    padding: 10px 20px;
-    text-decoration: none;
-  }
-  
-  /* menu */
-  
-  .header .menu {
-    clear: both;
-    max-height: 0;
-    transition: max-height .2s ease-out;
-  }
-  
-  /* menu icon */
-  
-  .header .menu-icon {
-    cursor: pointer;
-    display: inline-block;
-    float: right;
-    padding: 28px 20px;
-    position: relative;
-    user-select: none;
-  }
-  
-  .header .menu-icon .navicon {
-    background: #333;
-    display: block;
-    height: 2px;
-    position: relative;
-    transition: background .2s ease-out;
-    width: 18px;
-  }
-  
-  .header .menu-icon .navicon:before,
-  .header .menu-icon .navicon:after {
-    background: #333;
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
-  }
-  
-  .header .menu-icon .navicon:before {
-    top: 5px;
-  }
-  
-  .header .menu-icon .navicon:after {
-    top: -5px;
-  }
-  
-  /* menu btn */
-  
-  .header .menu-btn {
-    display: none;
-  }
-  
-  .header .menu-btn:checked ~ .menu {
-    max-height: 640px;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon {
-    background: transparent;
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:before {
-    transform: rotate(-45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon .navicon:after {
-    transform: rotate(45deg);
-  }
-  
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:before,
-  .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
-    top: 0;
-  }
-  
-  /* 48em = 768px */
-  
-  @media (min-width: 48em) {
-    
-    .header li {
-      float: left;
-    }
-    .header li a {
-      padding: 20px 30px;
-    }
-    .header .menu {
-      clear: none;
-      float: right;
-      max-height: none;
-    }
-    .header .menu-icon {
-      display: none;
-    }
-    
-  }
-  
- 
-  .inline{
-    display: inline;
-    
-  }
+#navbar-color{
+  background-color: #037ef3;
+}
+#nav-meniu-icon{
+  color: white;
+}
+#nav-avatar{
+  width: 30px!important;
+  height: 30px!important;
+}
 
-  #under_nav_header{
-    height: 57px;
+#navbar-height{
+  height: 45px!important;
+  min-height: 45px !important;
+}
+.nav-menu-button-large{color: inherit;
+  text-decoration: none!important;
+
+}
+
+.navbar-text{color:rgb(6,32,39) !important;}
+@media screen and (max-width: 900px){
+  #navbar-height{
+    height: 56px!important;
+    min-height: 56px !important;
   }
+}
+/*
+import { Link } from "react-router-dom"
+import './navbar.css'
+import i18n from "../../i18n";
+import { useTranslation } from "react-i18next";
+import { useEffect } from "react";
+const Navbar =()=>{
+const { t, i18n } = useTranslation('home');
+const onClickLanguageChange = (e: any) => {
+                                          const language = e.target.value;
+                                          i18n.changeLanguage(language); //change the language
+                                        }
+
+useEffect(() => {
+                const storedLanguage = localStorage.getItem("language");
+if (storedLanguage) {
+  i18n.changeLanguage(storedLanguage);
+}
+}, [i18n]);
+
+const handleChange = (event: { target: { value: any; }; }) => {
+                                                              const language = event.target.value;
+                                                              i18n.changeLanguage(language);
+                                                              localStorage.setItem("language", language);
+                                                            };
+return (
+<>
+<header className="header">
+<a href="" className="logo"><img src='/images/blue_logo.png' height={'20px'}/></a>
+<input className="menu-btn" type="checkbox" id="menu-btn" />
+<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
+<ul className="menu">
+
+<li><Link to="/projects">{t("navbar.projects")}</Link></li>
+<li><Link to="/shop">Shop</Link></li>
+<li><Link to="/about">{t("navbar.about")}</Link></li>
+
+<li><Link to="/contact">{t("navbar.contact")}</Link></li>
+
+<li><Link to="/login">{t("navbar.login")}</Link></li>
+<li id="li_lang_selection">
+<span className="inline" id="lang_description" >{t("navbar.language")}: </span>
+<select className="inline" id="lang_selection" value={i18n.language} onChange={onClickLanguageChange}>
+<option value="en" >en</option>
+<option value="ro" >ro</option>
+
+</select>
+</li>
+</ul>
+</header>
+<div id="under_nav_header"></div>
+</>
+
+)
+}
+
+export default Navbar;
+*/

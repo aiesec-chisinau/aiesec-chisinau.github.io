@@ -3,12 +3,14 @@
       "home": "Acasa",
       "about": "Despre noi",
       "contact": "Contact",
+      "shop": "Magazin",
       "projects":"Proiectele noastre",
       "login": "Logare",
       "language":"Limba"
     },
     "home": {
-        "welcome": "ro"
+        "welcome": "ro",
+      "home": "acasa"
     },
     "login": {
         "goback": "inapoi"

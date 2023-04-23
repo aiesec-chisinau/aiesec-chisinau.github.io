@@ -2,13 +2,15 @@
     "navbar": {
       "home": "Home",
       "about": "About us",
+      "shop": "Shop",
       "contact": "Contact",
       "projects":"Our Projects",
       "login": "Login",
       "language":"Language"
     },
     "home": {
-        "welcome": "en"
+        "welcome": "en",
+      "home": "home"
     },
     "login": {
         "goback": "go back"
