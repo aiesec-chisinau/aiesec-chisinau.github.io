@@ -136,15 +136,15 @@ function Navbar() {
               >
 
                   <MenuItem onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center"><Link className='nav-menu-button-large' to="/projects">{t("navbar.projects")}</Link></Typography>
+                      <Typography textAlign="center"><Link className='nav-menu-button-large nav-no-full-upercase' to="/projects">{t("navbar.projects")}</Link></Typography>
                   </MenuItem><MenuItem onClick={handleCloseNavMenu}>
-                  <Typography textAlign="center"><Link className='nav-menu-button-large' to="/shop">{t("navbar.shop")}</Link></Typography>
+                  <Typography textAlign="center"><Link className='nav-menu-button-large nav-no-full-upercase' to="/shop">{t("navbar.shop")}</Link></Typography>
               </MenuItem>
                   <MenuItem  onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center"><Link className='nav-menu-button-large' to="/about">{t("navbar.about")}</Link></Typography>
+                      <Typography textAlign="center"><Link className='nav-menu-button-large nav-no-full-upercase' to="/about">{t("navbar.about")}</Link></Typography>
                   </MenuItem>
                   <MenuItem  onClick={handleCloseNavMenu}>
-                      <Typography textAlign="center"><Link className='nav-menu-button-large' to="/contact">{t("navbar.contact")}</Link></Typography>
+                      <Typography textAlign="center"><Link className='nav-menu-button-large nav-no-full-upercase' to="/contact">{t("navbar.contact")}</Link></Typography>
                   </MenuItem>
 
 
@@ -173,19 +173,19 @@ function Navbar() {
 
                 <Button className='nav-menu-button-large'
                     sx={{ my: 2, color: 'white', display: 'block' }}>
-                    <Link className='nav-menu-button-large' to="/projects">{t("navbar.projects")}</Link>
+                    <Link className='nav-menu-button-large nav-no-full-upercase nav-no-full-upercase' to="/projects">{t("navbar.projects")}</Link>
                 </Button>
                 <Button className='nav-menu-button-large'
                         sx={{ my: 2, color: 'white', display: 'block' }}>
-                    <Link className='nav-menu-button-large' to="/store">{t("navbar.shop")}</Link>
+                    <Link className='nav-menu-button-large nav-no-full-upercase' to="/store">{t("navbar.shop")}</Link>
                 </Button>
                 <Button className='nav-menu-button-large'
                         sx={{ my: 2, color: 'white', display: 'block' }}>
-                    <Link className='nav-menu-button-large' to="/about">{t("navbar.about")}</Link>
+                    <Link className='nav-menu-button-large nav-no-full-upercase' to="/about">{t("navbar.about")}</Link>
                 </Button>
                 <Button className='nav-menu-button-large'
                         sx={{ my: 2, color: 'white', display: 'block' }}>
-                    <Link className='nav-menu-button-large' to="/contact">{t("navbar.contact")}</Link>
+                    <Link className='nav-menu-button-large nav-no-full-upercase' to="/contact">{t("navbar.contact")}</Link>
                 </Button>
                 <Button
                     style={{
