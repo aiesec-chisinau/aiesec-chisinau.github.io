@@ -9,7 +9,7 @@
       "language":"Language"
     },
     "home": {
-        "welcome": "en",
+        "lang": "en",
       "home": "home"
     },
     "login": {
@@ -20,6 +20,10 @@
         "who_are_we":"How are we?",
       "who_are_we_text": "Suntem cea mai mare organizație de voluntariat din lume, cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.\n\n\n\nVoluntarii noștri sunt tineri, studenți sau elevi, cu vârsta cuprinsă între 18 și 30 ani.\n\n\n\nEi sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership."
 
-    }
-   
+    },
+  "otm":{
+  "contact": "Contact Us",
+    "signin": "Sign In"
+}
+
 }

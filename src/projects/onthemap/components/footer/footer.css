@@ -1,0 +1,91 @@
+#footer{
+    background-color: rgb(34, 34, 34);
+    width: 100%;
+
+    position:absolute;
+    bottom:0;
+    height: 80px;
+
+}
+.footer_container{
+    display: flex;
+    justify-items: center;
+    height: 100%;
+}
+.footer_row{
+    display: inline-block;
+    height: 100%;
+    width: 100%;
+}
+.footer__title{
+    font-family: 'Lato';
+    font-size: 18px;
+    margin: 0;
+    margin-left: 0px;
+    margin-left: 10px;
+    display: inline-block;
+    line-height: 18px;
+    vertical-align: middle;
+    color:#3a9fff;
+}
+
+.footer__light{
+    font-family: 'Lato';
+    color:#fff;
+
+}
+
+.footer__social {
+    float: right;
+}
+
+.footer__social-l {
+    margin-left: 15px;
+    vertical-align: middle;
+}
+.footer-meniu-icon {
+    color: white;
+}
+
+.footer-vertical-center{
+    display: flex;
+    justify-items: center;
+    height: 100%;
+
+    align-items: center;
+}
+
+
+
+#footer-left-side{
+    float: left;
+    display: flex;
+    margin-left: 50px;
+}
+
+#footer-right-side{
+    float: right;
+    display: flex;
+    margin-right: 50px;
+}
+
+@media screen and (min-height: 100vh) {
+    #footer {
+        position: relative;
+        margin-top: 30px;
+    }
+}
+
+
+@media screen and (max-width: 455px) {
+    #footer-left-side {
+        margin-left: 10px;
+    }
+
+    #footer-right-side {
+        margin-right: 10px;
+    }
+    .footer__title{
+        font-size: 14px;
+    }
+}

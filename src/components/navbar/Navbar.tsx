@@ -58,8 +58,17 @@ function Navbar() {
     const language = event.target.value;
     i18n.changeLanguage(language);
     localStorage.setItem("language", language);
+
+
   };
 
+    useEffect(() => {
+        if(localStorage.getItem("login")=='logged'){
+console.log('logged')
+        }else{
+            console.log('not-logged')
+        }
+    }, []);
   const pages = [t("navbar.projects"), t("navbar.shop"), t("navbar.about"), t("navbar.contact")];
   const settings = ['Profile', 'Account', 'Dashboard', 'Logout'];
 
@@ -173,7 +182,7 @@ function Navbar() {
 
                 <Button className='nav-menu-button-large'
                     sx={{ my: 2, color: 'white', display: 'block' }}>
-                    <Link className='nav-menu-button-large nav-no-full-upercase nav-no-full-upercase' to="/projects">{t("navbar.projects")}</Link>
+                    <Link className='nav-menu-button-large nav-no-full-upercase ' to="/projects">{t("navbar.projects")}</Link>
                 </Button>
                 <Button className='nav-menu-button-large'
                         sx={{ my: 2, color: 'white', display: 'block' }}>
@@ -187,18 +196,7 @@ function Navbar() {
                         sx={{ my: 2, color: 'white', display: 'block' }}>
                     <Link className='nav-menu-button-large nav-no-full-upercase' to="/contact">{t("navbar.contact")}</Link>
                 </Button>
-                <Button
-                    style={{
-                        fontWeight: 200,
-                        padding: 10
-                    }}
-                    onClick={onClickLanguageChange}
 
-                    sx={{ my: 2, color: 'white', display: 'block' }}
-                >
-                    <b>{lang_seleced}</b> | {lang_option}
-
-                </Button>
                 <Typography
                     variant="h5"
                     noWrap
@@ -219,12 +217,38 @@ function Navbar() {
                 </Typography>
             </Box>
 
-            <Box  sx={{ flexGrow: 0 }}>
+            <Box style={{marginLeft:'-50px', marginRight:'-20px'}} sx={{ flexGrow: 0 }}>
               <Tooltip title="Open settings">
-                <IconButton  onClick={handleOpenUserMenu} sx={{ p: 0 }}>
-                  <Avatar id='nav-avatar' alt="A" src="/static/images/avatar/2.jpg" />
-                </IconButton>
+                  <IconButton  onClick={handleOpenUserMenu} sx={{ p: 0 }}>
+                      <Button
+                          style={{
+                              fontWeight: 200,
+                              padding: 10,
+                              display:'none'
+                          }}
+
+
+                          sx={{ my: 2, color: 'white', display: 'block' }}
+                      >
+                          <b> {t("navbar.login")}</b>
+                      </Button>
+                      <Avatar id='nav-avatar'  alt="A" src="/static/images/avatar/2.jpg" />
+                  </IconButton>
+
               </Tooltip>
+                <IconButton     sx={{ p: 0 }}>
+                    <Button
+                        style={{
+                            fontWeight: 200,
+                            padding: 10
+                        }}
+                        onClick={onClickLanguageChange}
+
+                        sx={{ my: 2, color: 'white', display: 'block' }}
+                    >
+                        <b>| &nbsp; {lang_seleced}</b>
+                    </Button>
+                </IconButton>
               <Menu
                   sx={{ mt: '45px' }}
                   id="menu-appbar"

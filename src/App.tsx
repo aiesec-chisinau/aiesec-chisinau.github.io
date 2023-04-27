@@ -9,6 +9,10 @@ import LoginPage from "./pages/login/LoginPage";
 import NotFound from "./pages/404/NotFound";
 
 
+//project routing imports
+import OntheMap from './projects/onthemap/pages/home/HomePage';
+
+
 function App() {
 
   
@@ -24,7 +28,12 @@ function App() {
         <Route path="/contact" element={<ContactPage/>} />
         <Route path="/login" element={<LoginPage/>} />
 
-        
+
+          // projects
+
+            //on-the-map
+        <Route path="/on-the-map" element={<OntheMap/>} />
+        <Route path="/onthemap" element={<OntheMap/>} />
       </Routes>
     </>
   );

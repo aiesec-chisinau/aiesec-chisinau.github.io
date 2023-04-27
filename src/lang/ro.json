@@ -9,7 +9,7 @@
       "language":"Limba"
     },
     "home": {
-        "welcome": "ro",
+        "lang": "ro",
       "home": "acasa"
     },
     "login": {
@@ -28,6 +28,10 @@
       "our_volunteers":"Voluntarii noștri",
       "our_volunteers_text1": "În fiecare an, în luna Septembrie și Februarie, orice tânăr poate deveni voluntar AIESEC în Chișinău.",
       "our_volunteers_text2": "Te invităm să aplici și să ne cunoști AIESEC din interior, alături de voluntarii noștri."
-    }
+    },
+  "otm":{
+    "contact": "Contactați-ne",
+    "signin": "Logare"
+  }
 
 }
