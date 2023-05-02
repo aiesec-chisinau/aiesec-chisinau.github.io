@@ -1,5 +1,5 @@
-import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
+import React, {useEffect, useState, useRef } from "react";
+import {Link, useLocation} from 'react-router-dom';
 
 import { useTranslation } from 'react-i18next';
 import InstagramIcon from '@mui/icons-material/Instagram';
@@ -7,6 +7,8 @@ import './header.css'
 
 
 const Header: React.FC = () => {
+
+
 
 
     let lang_seleced:string=JSON.stringify(localStorage.getItem("i18nextLng")).split('"').join('');
@@ -33,7 +35,11 @@ const Header: React.FC = () => {
             i18n.changeLanguage(storedLanguage);
 
         }
+
     }, [i18n]);
+
+
+
 
     const handleChange = (event: { target: { value: any; }; }) => {
         const language = event.target.value;
@@ -43,7 +49,7 @@ const Header: React.FC = () => {
 
     };
 
-
+    const location = useLocation();
     return (
         <>
 
@@ -61,9 +67,13 @@ const Header: React.FC = () => {
 
                                 <li className="otm_home_header__el"> <Link to='/*'  className=" otm_home_header__link ">{t("otm.contact")}
                                     </Link></li>
-                                <li className="otm_home_header__el otm_home_header__el--blue"><Link to='/*'  className="otm_home_btn otm_home_btn--white">{t("otm.signin")} →</Link>
+                                {location.pathname == '/onthemap' && (
+                                    <li className="otm_home_header__el otm_home_header__el--blue"  >
+                                        <Link to='/*'  className="otm_home_btn otm_home_btn--white">{t("otm.signin")} →</Link>
 
-                                </li>
+                                    </li>
+                                )}
+
                                 <li className="otm_home_header__el otm_home_header__link" id='otm-header-lang' style={{padding: '0 '}}  onClick={onClickLanguageChange}>| &nbsp; {lang_seleced}</li>
                             </ul>
                         </nav>

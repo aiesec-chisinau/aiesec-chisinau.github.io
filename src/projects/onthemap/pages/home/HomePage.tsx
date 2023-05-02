@@ -6,7 +6,7 @@ import './home.css';
 import { useTranslation } from 'react-i18next';
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-
+import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
 const OTMhomePage: React.FC = () => {
 
     const { t, i18n } = useTranslation('home');
@@ -37,8 +37,11 @@ const OTMhomePage: React.FC = () => {
 
                 <main>
 <div id='otm-home-join'>
-
+    <a href="https://www.instagram.com/aiesec.onthemap"><img className="otm_site__img" src="/images/onthemap/main.png"/></a>
+    <Link to='/*' id='otm_home-joinus' className="otm_home_btn otm_home_btn--white">{t("otm.joinus")}</Link>
+    <ArrowDownwardIcon id='otm_home_down_arrow'/>
 </div>
+
                 </main>
 <Footer/>
 

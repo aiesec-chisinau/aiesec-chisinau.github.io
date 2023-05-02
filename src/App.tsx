@@ -1,5 +1,5 @@
 
-import { Routes, Route, useLocation} from "react-router-dom";
+import { Routes, Route , Navigate} from "react-router-dom";
 
 
 import HomePage from './pages/home/HomePage';
@@ -11,17 +11,20 @@ import NotFound from "./pages/404/NotFound";
 
 //project routing imports
 import OntheMap from './projects/onthemap/pages/home/HomePage';
+import React from "react";
+
 
 
 function App() {
 
-  
+
   return (
     <>
 
   
      
       <Routes >
+
         <Route path="*" element={<NotFound/>} />
         <Route path="/" element={<HomePage />} />
         <Route path="/about" element={<AboutPage/>} />
@@ -32,7 +35,8 @@ function App() {
           // projects
 
             //on-the-map
-        <Route path="/on-the-map" element={<OntheMap/>} />
+
+        <Route path="/on-the-map" element={<Navigate to="/onthemap" replace />}/>
         <Route path="/onthemap" element={<OntheMap/>} />
       </Routes>
     </>

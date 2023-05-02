@@ -110,6 +110,7 @@
     display: inline-block;
     line-height: 18px;
     vertical-align: middle;
+    font-weight: normal;
 }
 
 .otm_home_header__light{
@@ -192,8 +193,8 @@
 
 
 .otm_home_container{
-    padding-right: 30px;
-    padding-left: 30px;
+    padding-right: 10%;
+    padding-left: 10%;
     margin-right: auto;
     margin-left: auto;
 }
@@ -214,4 +215,17 @@
         margin-top: -5px;
     }
 
+}
+
+@media screen and (max-width: 600px) {
+    .otm_home_container {
+        padding-right: 30px;
+        padding-left: 30px;
+    }
+}
+@media screen and (max-width: 420px) {
+    .otm_home_container {
+        padding-right: 0px;
+        padding-left: 0px;
+    }
 }

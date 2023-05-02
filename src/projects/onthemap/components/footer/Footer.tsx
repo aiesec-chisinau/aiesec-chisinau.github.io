@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 <div className="footer_container">
                     <div className="footer_row">
                         <div className='footer-vertical-center' id='footer-left-side'>
-                            <img className="footer__img" src="/images/onthemap/logo-white-gif.gif" height='40px;' width='40px'/><h1 className="footer__title">On
+                            <img className="footer__img" src="/images/onthemap/logo-gif-white.gif" height='40px;' width='40px'/><h1 className="footer__title">On
                                 The Map<span className="footer__light"><br/>powered by AIESEC</span></h1></div>
                         <div className='footer-vertical-center' id='footer-right-side'>
                             <div className="footer__social">
