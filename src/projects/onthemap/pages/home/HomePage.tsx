@@ -29,23 +29,36 @@ const OTMhomePage: React.FC = () => {
         <>
 
 
-            <div className=".otm_home_totaldiv">
+
 
 
 
 <Header/>
 
-                <main>
-<div id='otm-home-join'>
-    <a href="https://www.instagram.com/aiesec.onthemap"><img className="otm_site__img" src="/images/onthemap/main.png"/></a>
-    <Link to='/*' id='otm_home-joinus' className="otm_home_btn otm_home_btn--white">{t("otm.joinus")}</Link>
-    <ArrowDownwardIcon id='otm_home_down_arrow'/>
-</div>
 
-                </main>
-<Footer/>
+            <div id='otm-home-join'>
+
+                <div id='otm-home-join_div'>
+                    <div id='otm-home-join_div_center'>
+                        <a href="https://www.instagram.com/aiesec.onthemap"><img id="otm_site__img" src="/images/onthemap/main.png"/></a>
+                        <div id='otm_home-joinus'>
+                            <Link to='/*' id='otm_home-joinus-button'   className="otm_home_btn">{t("otm.joinus")}</Link>
+
+                        </div>
+                         </div>
+
+
+</div>
+                <ArrowDownwardIcon id='otm_home_down_arrow'/>
+            </div>
+            <div id='otm_home_about'>
 
             </div>
+
+
+<Footer/>
+
+
 
 
         </>

@@ -1,4 +1,4 @@
-#footer{
+#otm_footer{
     background-color: rgb(34, 34, 34);
     width: 100%;
 
@@ -7,17 +7,17 @@
     height: 80px;
 
 }
-.footer_container{
+.otm_footer_container{
     display: flex;
     justify-items: center;
     height: 100%;
 }
-.footer_row{
+.otm_footer_row{
     display: inline-block;
     height: 100%;
     width: 100%;
 }
-.footer__title{
+.otm_footer__title{
     font-family: 'Lato';
     font-size: 18px;
     margin: 0;
@@ -29,63 +29,60 @@
     color:#3a9fff;
 }
 
-.footer__light{
+.otm_footer__light{
     font-family: 'Lato';
     color:#fff;
 
 }
 
-.footer__social {
+.otm_footer__social {
     float: right;
 }
 
-.footer__social-l {
+.otm_footer__social-l {
     margin-left: 15px;
     vertical-align: middle;
 }
-.footer-meniu-icon {
+.otm_footer-meniu-icon {
     color: white;
 }
 
-.footer-vertical-center{
+.otm_footer-vertical-center{
     display: flex;
     justify-items: center;
     height: 100%;
 
     align-items: center;
 }
+#otm-footer-bg-space{
+    height: 80px;
+}
 
 
-
-#footer-left-side{
+#otm_footer-left-side{
     float: left;
     display: flex;
     margin-left: 50px;
 }
 
-#footer-right-side{
+#otm_footer-right-side{
     float: right;
     display: flex;
     margin-right: 50px;
 }
 
-@media screen and (min-height: 100vh) {
-    #footer {
-        position: relative;
-        margin-top: 30px;
-    }
-}
+
 
 
 @media screen and (max-width: 455px) {
-    #footer-left-side {
+    #otm_footer-left-side {
         margin-left: 10px;
     }
 
-    #footer-right-side {
+    #otm_footer-right-side {
         margin-right: 10px;
     }
-    .footer__title{
+    .otm_footer__title{
         font-size: 14px;
     }
 }

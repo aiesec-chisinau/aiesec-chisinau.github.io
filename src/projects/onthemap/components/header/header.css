@@ -229,3 +229,26 @@
         padding-left: 0px;
     }
 }
+
+@media screen and (max-width: 360px) {
+    .otm_home_header__link{
+        font-size: 11px;
+    }
+    .otm_home_btn--white {
+        background-color: #fff;
+        font-size: 14px;
+    }
+    .otm_home_header__title{
+        font-size: 15px;
+    }
+    .otm_home_btn--white {
+        font-size: 10px;
+    }
+
+}
+
+@media screen and (max-width: 310px) {
+    .otm_home_header__title{
+        display: none;
+    }
+}

@@ -20,27 +20,27 @@ const Footer: React.FC = () => {
     return (
         <>
 
+            <div id='otm-footer-bg-space'></div>
+            <footer id="otm_footer">
+                <div className="otm_footer_container">
+                    <div className="otm_footer_row">
+                        <div className='otm_footer-vertical-center' id='otm_footer-left-side'>
+                            <img className="otm_footer__img" src="/images/onthemap/logo-gif-white.gif" height='40px;' width='40px'/><h1 className="otm_footer__title">On
+                                The Map<span className="otm_footer__light"><br/>powered by AIESEC</span></h1></div>
+                        <div className='otm_footer-vertical-center' id='otm_footer-right-side'>
+                            <div className="otm_footer__social">
 
-            <footer id="footer">
-                <div className="footer_container">
-                    <div className="footer_row">
-                        <div className='footer-vertical-center' id='footer-left-side'>
-                            <img className="footer__img" src="/images/onthemap/logo-gif-white.gif" height='40px;' width='40px'/><h1 className="footer__title">On
-                                The Map<span className="footer__light"><br/>powered by AIESEC</span></h1></div>
-                        <div className='footer-vertical-center' id='footer-right-side'>
-                            <div className="footer__social">
+                                <a href="https://www.facebook.com/aiesec.in.chisinau" className="otm_footer__social-l">
 
-                                <a href="https://www.facebook.com/aiesec.in.chisinau" className="footer__social-l">
-
-                                    <FacebookIcon className='footer-meniu-icon'/></a>
+                                    <FacebookIcon className='otm_footer-meniu-icon'/></a>
 
 
-                                <a href="https://www.instagram.com/aiesec.onthemap" className="footer__social-l">
-                                    <InstagramIcon className='footer-meniu-icon'/></a>
+                                <a href="https://www.instagram.com/aiesec.onthemap" className="otm_footer__social-l">
+                                    <InstagramIcon className='otm_footer-meniu-icon'/></a>
 
                                 <a href="https://www.linkedin.com/showcase/aiesec-in-chisinau/"
-                                   className="footer__social-l">
-                                    <LinkedInIcon className='footer-meniu-icon'/> </a>
+                                   className="otm_footer__social-l">
+                                    <LinkedInIcon className='otm_footer-meniu-icon'/> </a>
 
                             </div>
                         </div>
