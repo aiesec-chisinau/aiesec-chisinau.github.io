@@ -10,7 +10,10 @@ import NotFound from "./pages/404/NotFound";
 
 
 //project routing imports
+
+//on the map
 import OntheMap from './projects/onthemap/pages/home/HomePage';
+import LogoOTM from './projects/onthemap/utility/back_logo/logo'
 import React from "react";
 
 
@@ -38,6 +41,10 @@ function App() {
 
         <Route path="/on-the-map" element={<Navigate to="/onthemap" replace />}/>
         <Route path="/onthemap" element={<OntheMap/>} />
+
+        // utility
+        <Route path="/onthemap/logo" element={<LogoOTM/>} />
+
       </Routes>
     </>
   );
