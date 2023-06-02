@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
                 <div className="otm_footer_container">
                     <div className="otm_footer_row">
                         <div className='otm_footer-vertical-center' id='otm_footer-left-side'>
-                            <img className="otm_footer__img" src="/images/onthemap/logo-gif-white.gif" height='40px;' width='40px'/><h1 className="otm_footer__title">On
+                            <img className="otm_footer__img" src="/images/onthemap/logo_gif_white_transparent_bg.gif" height='40px;' width='40px'/><h1 className="otm_footer__title">On
                                 The Map<span className="otm_footer__light"><br/>powered by AIESEC</span></h1></div>
                         <div className='otm_footer-vertical-center' id='otm_footer-right-side'>
                             <div className="otm_footer__social">
