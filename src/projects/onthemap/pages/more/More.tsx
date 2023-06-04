@@ -6,7 +6,7 @@ import './more.css';
 import { useTranslation } from 'react-i18next';
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
-import ArrowDownwardIcon from '@mui/icons-material/ArrowDownward';
+
 
 const OTMmorePage: React.FC = () => {
 
@@ -32,8 +32,10 @@ const OTMmorePage: React.FC = () => {
 
 
 
-        <div className={"OTM_more_page"}>
-          <h1 className={'OTM_more_center_text'}> {t("otm_more.title")}</h1>
+        <div className="OTM_more_page">
+          <h2 className={'OTM_more_center_text'}> {t("otm_more.title")}&nbsp; </h2>
+        </div>
+        <div id='OTM_more_midpage'><br/>
         </div>
           <Footer/>
 

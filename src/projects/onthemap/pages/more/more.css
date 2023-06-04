@@ -1,8 +1,26 @@
 .OTM_more_page{
-    height: 85vh;
+
     position: relative;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
 }
 
 .OTM_more_center_text{
+    display: flex;
     align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
+#OTM_more_midpage{
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+
+@media screen and (max-width: 600px) {
+    #OTM_more_midpage{
+        width: 90%;
+        margin-left: 5%;
+    }
 }

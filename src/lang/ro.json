@@ -8,10 +8,15 @@
       "login": "Logare",
       "language":"Limba"
     },
-    "home": {
-        "lang": "ro",
-      "home": "acasa"
-    },
+  "projects": {
+    "seemore": "vezi mai multe...",
+    "aboutprojects": "Despre proiectele noastre",
+    "actual": "In desfasurare:"
+  },
+  "home": {
+    "lang": "ro",
+    "home": "Ne scuzati, web-siteul este inca in proces de creare"
+  },
     "login": {
         "goback": "inapoi"
     },
@@ -44,7 +49,7 @@
     "period3dates": "23 august - 2 octombrie"
   },
   "otm_more": {
-    "title":"Despre"
+    "title":"Despre Proiect"
   },
   "otm_contact": {
     "title":"Contact ",

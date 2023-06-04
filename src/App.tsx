@@ -16,6 +16,7 @@ import OntheMap from './projects/onthemap/pages/home/HomePage';
 import OTMformPage from './projects/onthemap/pages/form/FormPage'
 import OTMcontactPage from './projects/onthemap/pages/contact/Contact'
 import OTMmorePage from './projects/onthemap/pages/more/More'
+import ProjectsPage from './pages/projects/ProjectsPage'
 
 
 
@@ -33,6 +34,9 @@ function App() {
         <Route path='/about' element={<AboutPage />} />
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/login' element={<LoginPage />} />
+        <Route path='/projects' element={<ProjectsPage/>} />
+
+
 
 
         // projects

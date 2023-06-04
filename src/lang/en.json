@@ -8,9 +8,14 @@
       "login": "Login",
       "language":"Language"
     },
+  "projects": {
+    "seemore": "see more...",
+    "aboutprojects": "About our projects",
+    "actual": "Ongoing:"
+  },
     "home": {
         "lang": "en",
-      "home": "home"
+      "home": "Excuse us, the website is still under construction"
     },
     "login": {
         "goback": "go back"
