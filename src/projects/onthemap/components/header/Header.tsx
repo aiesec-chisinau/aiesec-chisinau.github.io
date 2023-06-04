@@ -68,9 +68,10 @@ const Header: React.FC = () => {
                     <div className="otm_home_header__menu">
                         <nav id="navbar" className="otm_home_header__nav collapse">
                             <ul className="otm_home_header__elenco">
+                                {location.pathname !== '/onthemap/contact' && (
+                                <li className="otm_home_header__el"> <Link to='/onthemap/contact'  className=" otm_home_header__link ">{t("otm.contact")}
 
-                                <li className="otm_home_header__el"> <Link to='/*'  className=" otm_home_header__link ">{t("otm.contact")}
-                                    </Link></li>
+                                    </Link></li>)}
                                 {location.pathname == '/onthemap' && (
                                     <li className="otm_home_header__el otm_home_header__el--blue"  >
                                         <Link to='/*'  className="otm_home_btn otm_home_btn--white">{t("otm.signin")} →</Link>
@@ -78,8 +79,15 @@ const Header: React.FC = () => {
                                     </li>
                                 )}
 
-                                <li className="otm_home_header__el otm_home_header__link" id='otm-header-lang' style={{padding: '0 '}}  onClick={onClickLanguageChange}>| &nbsp; {lang_seleced}</li>
-                            </ul>
+                                {location.pathname !== '/onthemap/contact' && (
+                                  <li className="otm_home_header__el otm_home_header__link" id='otm-header-lang' style={{padding: '0 '}}  onClick={onClickLanguageChange}>| &nbsp; {lang_seleced}</li>
+                                )}
+                                {location.pathname == '/onthemap/contact' && (
+                                  <li className="otm_home_header__el otm_home_header__link" id='otm-header-lang' style={{padding: '0 '}}  onClick={onClickLanguageChange}> {t("navbar.language")}: &nbsp; {lang_seleced}&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</li>
+                                )}
+
+
+                                </ul>
                         </nav>
                     </div>
                 </div>

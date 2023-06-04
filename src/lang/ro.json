@@ -33,7 +33,7 @@
     "contact": "Contactați-ne",
     "signin": "Logare",
     "joinus": "Aplica",
-    "more": "mai multe despre proiect"
+    "more": "mai multa informatie"
   },
   "otm_apply":{
     "period1": "perioada 1",
@@ -42,6 +42,15 @@
     "period2dates": "19 iulie - 28 august",
     "period3": "perioada 3",
     "period3dates": "23 august - 2 octombrie"
+  },
+  "otm_more": {
+    "title":"Despre"
+  },
+  "otm_contact": {
+    "title":"Contact ",
+    "ifcontact": "Dacă aveți întrebări suplimentare, nu ezitați să ne contactați",
+    "iflocation": "Adresa noastră fizică:",
+    "ifsocial": "Our social media:"
   }
 
 

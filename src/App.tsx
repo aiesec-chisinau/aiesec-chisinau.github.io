@@ -1,4 +1,4 @@
-
+import React from "react";
 import { Routes, Route , Navigate} from "react-router-dom";
 
 
@@ -14,7 +14,8 @@ import NotFound from "./pages/404/NotFound";
 //on the map
 import OntheMap from './projects/onthemap/pages/home/HomePage';
 import OTMformPage from './projects/onthemap/pages/form/FormPage'
-import React from "react";
+import OTMcontactPage from './projects/onthemap/pages/contact/Contact'
+import OTMmorePage from './projects/onthemap/pages/more/More'
 
 
 
@@ -24,27 +25,29 @@ function App() {
   return (
     <>
 
-  
-     
-      <Routes >
 
-        <Route path="*" element={<NotFound/>} />
-        <Route path="/" element={<HomePage />} />
-        <Route path="/about" element={<AboutPage/>} />
-        <Route path="/contact" element={<ContactPage/>} />
-        <Route path="/login" element={<LoginPage/>} />
+      <Routes>
+
+        <Route path='*' element={<NotFound />} />
+        <Route path='/' element={<HomePage />} />
+        <Route path='/about' element={<AboutPage />} />
+        <Route path='/contact' element={<ContactPage />} />
+        <Route path='/login' element={<LoginPage />} />
 
 
-          // projects
+        // projects
 
-            //on-the-map
+        //on-the-map
 
-        <Route path="/on-the-map" element={<Navigate to="/onthemap" replace />}/>
-        <Route path="/onthemap" element={<OntheMap/>} />
-        <Route path="/onthemap/apply" element={<OTMformPage/>} />
+        <Route path='/on-the-map' element={<Navigate to='/onthemap' replace />} />
+        <Route path='/onthemap' element={<OntheMap />} />
+        <Route path='/onthemap/apply' element={<OTMformPage />} />
+        <Route path='/onthemap/contact' element={<OTMcontactPage />} />
+        <Route path='/onthemap/more' element={<OTMmorePage />} />
+
 
       </Routes>
     </>
-  );
+  )
 }
 export default App;

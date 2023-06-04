@@ -37,7 +37,8 @@
 }
 #otm_home-joinus{
     display: flex;
-   width: 100px;
+    width: 100%;
+
     align-items: center;
     transform: translate(-50%, 0%);
     margin-left: 50%;
@@ -45,12 +46,27 @@
     text-align: center;
     flex-direction: column;
 }
-#otm_home-joinus-button{
+#otm_home-joinus-button, #otm_home-joinus-button2{
+
     width: 100%;
+    padding: 14px 40px;
+    margin: 0 2px 0 2px ;
     text-decoration: none!important;
     font-family: 'Lato', sans-serif!important;
+    box-shadow: none;
 }
+#otm_home-joinus-button2{
+    background-color: transparent;
+    color: #8198ae;
+    padding: 14px 30px;
+    border: 1px solid #c9d9e9;
 
+}
+#otm_home_line_buttons{
+
+    justify-content: center;
+    display: flex;
+}
 @media screen and (max-width: 1200px) {
     #otm-home-join_div_center{
         width: 80%;

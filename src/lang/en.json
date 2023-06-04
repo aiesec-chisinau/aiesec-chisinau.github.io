@@ -34,6 +34,14 @@
     "period2dates": "19 july - 28 august",
     "period3": "period 3",
     "period3dates": "23 august - 2 october"
+  },
+  "otm_more": {
+    "title":"About Project"
+  },
+  "otm_contact": {
+    "title":"Contact ",
+    "ifcontact": "If you have any additional questions, don't hesitate to contact us",
+    "iflocation": "Our physical address:",
+    "ifsocial": "Rețelele noastre sociale:"
   }
-
 }

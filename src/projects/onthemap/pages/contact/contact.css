@@ -1,0 +1,30 @@
+.OTM_contact_page{
+
+position: relative;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+
+.OTM_contact_center_text{
+    display: flex;
+align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
+#OTM_contact_midpage{
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+
+.OTM_contact_social{
+    display: flex;
+    flex-direction: row;
+}
+@media screen and (max-width: 600px) {
+    #OTM_contact_midpage{
+        width: 90%;
+        margin-left: 5%;
+    }
+}
