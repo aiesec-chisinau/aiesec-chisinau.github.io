@@ -32,7 +32,17 @@
   "otm":{
     "contact": "Contactați-ne",
     "signin": "Logare",
-    "joinus": "Aplica"
+    "joinus": "Aplica",
+    "more": "mai multe despre proiect"
+  },
+  "otm_apply":{
+    "period1": "perioada 1",
+    "period1dates": "19 iunie -30 iulie",
+    "period2": "perioada 2",
+    "period2dates": "19 iulie - 28 august",
+    "period3": "perioada 3",
+    "period3dates": "23 august - 2 octombrie"
   }
+
 
 }

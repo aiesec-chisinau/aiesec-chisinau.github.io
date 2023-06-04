@@ -24,7 +24,16 @@
   "otm":{
   "contact": "Contact Us",
     "signin": "Sign In",
-    "joinus": "Join us"
-}
+    "joinus": "Join us",
+    "more": "more about project"
+},
+  "otm_apply":{
+    "period1": "period 1",
+    "period1dates": "19 june -30 july",
+    "period2": "period 2",
+    "period2dates": "19 july - 28 august",
+    "period3": "period 3",
+    "period3dates": "23 august - 2 october"
+  }
 
 }

@@ -48,18 +48,22 @@ const Header: React.FC = () => {
 
 
     };
-
+    const toOTM=()=>{
+        window.location.href = "/#/onthemap";
+    }
     const location = useLocation();
     return (
         <>
 
 
             <header className="otm_home_header">
+
                 <div className=" otm_home_container otm_home_header__container">
-                    <div className="otm_home_header__logo"><img className="otm_home_header__img" height="25px" width="25px"
+                    <Link to={'/onthemap'} style={{color:"#222222"}}>
+                    <div className="otm_home_header__logo" ><img className="otm_home_header__img" height="25px" width="25px"
                                                                 src="/images/onthemap/logo_black.png"/><h1 className="otm_home_header__title">On the map<span
                         className="otm_home_header__light"></span></h1></div>
-
+                    </Link>
 
                     <div className="otm_home_header__menu">
                         <nav id="navbar" className="otm_home_header__nav collapse">

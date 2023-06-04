@@ -42,13 +42,17 @@ const OTMhomePage: React.FC = () => {
                     <div id='otm-home-join_div_center'>
                         <a href="https://www.instagram.com/aiesec.onthemap"><img id="otm_site__img" src="/images/onthemap/main.png"/></a>
                         <div id='otm_home-joinus'>
-                            <Link to='/*' id='otm_home-joinus-button'   className="otm_home_btn">{t("otm.joinus")}</Link>
+                            <Link to='/onthemap/apply' id='otm_home-joinus-button'   className="otm_home_btn">{t("otm.joinus")}</Link>
 
+<Link to={'/onthemap/more'} style={{color:"#666666", fontSize:'10px', width:"200px", marginTop:"1vw", fontFamily:"Lato"}}>{t("otm.more")} </Link>
                         </div>
+
                          </div>
 
 
 </div>
+
+
                 <ArrowDownwardIcon id='otm_home_down_arrow'/>
             </div>
             <div id='otm_home_about'>
