@@ -92,6 +92,7 @@ const OTMcontactPage: React.FC = () => {
               <LinkedInIcon  style={{color:"#222222"}}/> </Link>
 
           </div>
+          <div style={{height:"3vw"}}>&nbsp;</div>
         </div>
 
           <Footer/>
