@@ -37,11 +37,13 @@
     "photos": "Photos"
   },
   "otm_apply":{
-    "period1": "period 1",
+    "period0": "On the Map 1",
+    "period0dates":"6 february - 18 march",
+    "period1": "OTM 2 period 1",
     "period1dates": "19 june -30 july",
-    "period2": "period 2",
-    "period2dates": "19 july - 28 august",
-    "period3": "period 3",
+    "period2": "OTM 2 period 2",
+    "period2dates": "17 july - 28 august",
+    "period3": "OTM 2 period 3",
     "period3dates": "23 august - 2 october"
   },
   "otm_more": {

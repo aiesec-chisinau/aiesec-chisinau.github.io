@@ -47,10 +47,14 @@ const form1=()=>{
 
 <div id='OTM_apply'>
   <div id='OTM_apply_choseperiod' >
+    <div  style={{color:"#037EF3" , border: '1px solid #222222', opacity:"0.3"}} className='show OTM_apply_choose_preiod'>
+      <b> {t("otm_apply.period0")}</b> <br/>
+      <span style={{color:"#888888"}}>{t("otm_apply.period0dates")}</span>
+    </div>
     <div  onClick={() => {
       show_hide('OTM_apply','OTM_apply_form1');
       form1()
-    } }style={{color:"#037EF3" , border: '1px solid #037EF3'}} className='show OTM_apply_choose_preiod'>
+    } }style={{color:"#037EF3" , border: '2px solid #037EF3'}} className='show OTM_apply_choose_preiod'>
       <b> {t("otm_apply.period1")}</b> <br/>
       <span style={{color:"#888888"}}>{t("otm_apply.period1dates")}</span>
     </div>

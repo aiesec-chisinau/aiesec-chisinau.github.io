@@ -45,11 +45,13 @@
     "photos": "Poze"
   },
   "otm_apply":{
-    "period1": "perioada 1",
+    "period0": "On the Map 1",
+    "period0dates":"6 februarie - 18 martie",
+    "period1": "OTM 2 perioada 1",
     "period1dates": "19 iunie -30 iulie",
-    "period2": "perioada 2",
+    "period2": "OTM 2 perioada 2",
     "period2dates": "19 iulie - 28 august",
-    "period3": "perioada 3",
+    "period3": "OTM 2 perioada 3",
     "period3dates": "23 august - 2 octombrie"
   },
   "otm_more": {
