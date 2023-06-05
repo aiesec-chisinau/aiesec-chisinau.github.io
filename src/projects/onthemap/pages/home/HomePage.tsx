@@ -107,7 +107,7 @@ const OTMhomePage: React.FC = () => {
 
             </div>
           <div id='OTM_home_photos'>
-            <p id='OTM_home_photo_title'> Photos</p>
+            <p id='OTM_home_photo_title'> {t('otm.photos')}</p>
 
             <div className='OTM_home_photos_row'>
               <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
