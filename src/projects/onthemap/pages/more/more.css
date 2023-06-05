@@ -33,6 +33,7 @@
     font-family: 'Lato', sans-serif;
     padding: 1rem;
 width: 80%;
+    max-width: 800px;
     box-shadow: 0 1px 3px 0 rgba(0,0,0,.1), 0 1px 2px 0 rgba(0,0,0,.06);
     border: 0 solid rgba(0,0,0,.125);
     border-radius: 0.25rem;
@@ -52,6 +53,24 @@ width: 80%;
     justify-content: center;
     align-items: center;
 }
+.OTM_more_ans{
+    padding: 10px;
+    margin-top: 10px;
+    color: #888888;
+}
+.show {
+    display: block!important;
+}
+
+.hide {
+    display: none!important;
+}
+.rotate0{
+    rotate: 0;
+}
+.rotate180{
+    rotate: 180deg;
+}
 @media screen and (max-width: 600px) {
     #OTM_more_midpage{
         width: 90%;
@@ -62,3 +81,4 @@ width: 80%;
         margin-left: 5%;
     }
 }
+

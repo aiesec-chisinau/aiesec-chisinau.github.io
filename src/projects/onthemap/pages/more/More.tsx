@@ -1,4 +1,4 @@
-import React, {useEffect, useState} from 'react';
+import React, {useEffect, useState, } from 'react';
 import { Link } from 'react-router-dom';
 import axios from 'axios';
 import { Container, Form, Button, Alert } from 'react-bootstrap';
@@ -11,9 +11,42 @@ import ExpandMoreIcon from '@mui/icons-material/ExpandMore';
 const OTMmorePage: React.FC = () => {
 
     const { t, i18n } = useTranslation('home');
+  var q1stte=0;
+  const show_hide1 = (id1: string, id2: string, arrnr:string) => {
+    const element1 = document.getElementById(id1);
+    const element2 = document.getElementById(id2);
+    const element3 = document.getElementById(arrnr);
+    if (q1stte == 0) {
+      if (element1) {
+        q1stte=1;
+        element1.classList.remove('hide');
+        element1.classList.add('show');
+      }
+      if (element2) {
+        element2.classList.remove('show');
+        element2.classList.add('hide');
+      }
+      if (element3) {
+        element3.classList.remove('rotate0');
+        element3.classList.add('rotate180');
+      }
+    } else {
+      if (element1) {
+        q1stte=0;
+        element1.classList.remove('show');
+        element1.classList.add('hide');
+      }
+      if (element2) {
+        element2.classList.remove('hide');
+        element2.classList.add('show');
+      }
+      if (element3) {
+        element3.classList.remove('rotate180');
+        element3.classList.add('rotate0');
+      }
 
-
-
+    }
+  }
     const [title, setTitle] = useState("On the Map");
     //'/images/onthemap/logo_black.png'
     useEffect(() => {
@@ -36,11 +69,16 @@ const OTMmorePage: React.FC = () => {
           <h2 className={'OTM_more_center_text'}> {t("otm_more.title")}&nbsp; </h2>
           <p id='OTM_more_discover'><i>Moldova - waiting to be found On The Map!</i></p>
 
-          <div className='OTM_more_qa'>
+          <div className='OTM_more_qa'  onClick={() => {
+            show_hide1('OTM_more_ans1','OTM_more_ans1empty', 'OTM_more_arr1');
+
+          } }>
             <div className='OTM_more_qa_row'>
               <div className='OTM_more_qa_text'>Pe scurt</div>
-              <div className='OTM_more_qa_arrow'><ExpandMoreIcon/></div>
+              <div className='OTM_more_qa_arrow'><ExpandMoreIcon id='OTM_more_arr1'/></div>
             </div>
+            <div id='OTM_more_ans1' className=' OTM_more_ans hide'> &nbsp;&nbsp;&nbsp;{t("otm_more.a1")}</div>
+            <div id='OTM_more_ans1empty'></div>
 
           </div>
         </div>
