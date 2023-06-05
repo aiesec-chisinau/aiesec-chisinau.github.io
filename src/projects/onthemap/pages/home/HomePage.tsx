@@ -75,10 +75,10 @@ const OTMhomePage: React.FC = () => {
             <div className='OTM_home_photos_row'>
               <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
               <img src='/images/onthemap/events/IMG_8812.JPG' className='OTM_home_photos'/>
-              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
-              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
-              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
-              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_9161.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_7037.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8831.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_9082.JPG' className='OTM_home_photos'/>
             </div>
 
           </div>
