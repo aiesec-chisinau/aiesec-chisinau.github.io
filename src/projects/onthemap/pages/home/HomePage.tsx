@@ -51,7 +51,7 @@ const OTMhomePage: React.FC = () => {
 
 
         console.log('aaaa');
-      }, 3000);
+      }, 4000);
 
       // Clear the timeout if the component unmounts before the 3 seconds.
       return () => clearTimeout(timer);
