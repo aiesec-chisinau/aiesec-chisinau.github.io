@@ -20,6 +20,41 @@ const OTMhomePage: React.FC = () => {
         // This will run when the page first loads and whenever the title changes
         document.title = title;
 
+        if(localStorage.getItem("one_time_gif_home_page_OTM")=='true') {
+          const element1 = document.getElementById('OTM_onetiome_gif');
+          if (element1) {
+            element1.classList.remove('show');
+            element1.classList.add('hide');
+          }
+          const element2 = document.getElementById('OTM_homepage');
+          if (element2) {
+            element2.classList.remove('hide');
+            element2.classList.add('show');
+          }
+        }
+
+        const timer = setTimeout(() => {
+
+          if (localStorage.getItem("one_time_gif_home_page_OTM") != 'true') {
+            localStorage.setItem("one_time_gif_home_page_OTM", 'true');
+            const element1 = document.getElementById('OTM_onetiome_gif');
+            if (element1) {
+              element1.classList.remove('show');
+              element1.classList.add('hide');
+            }
+            const element2 = document.getElementById('OTM_homepage');
+            if (element2) {
+              element2.classList.remove('hide');
+              element2.classList.add('show');
+            }
+          }
+
+
+        console.log('aaaa');
+      }, 3000);
+
+      // Clear the timeout if the component unmounts before the 3 seconds.
+      return () => clearTimeout(timer);
     }, [title]);
 
 
@@ -31,9 +66,11 @@ const OTMhomePage: React.FC = () => {
 
 
 
+          <div id='OTM_onetiome_gif'>
+            <img src='/images/onthemap/logo_gif_black_trasnparent_bg_onetime_loop.gif' style={{height: '150px',width: '150px' }}/>
+          </div>
 
-
-
+          <div id='OTM_homepage' className='hide' style={{width:'100%' }}>
 <Header/>
 
 
@@ -87,7 +124,7 @@ const OTMhomePage: React.FC = () => {
 
 
 
-
+          </div>
         </>
     );
 };
