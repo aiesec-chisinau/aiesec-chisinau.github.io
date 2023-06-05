@@ -59,15 +59,30 @@ const OTMhomePage: React.FC = () => {
                 <ArrowDownwardIcon id='otm_home_down_arrow'/>
             </div>
             <div id='otm_home_about'>
+              <hr style={{width:"80%", marginLeft:"10%", border:" 0.1vw solid rgb(227 227 227 / 63%)",marginTop:"4vw", marginBottom:"4vw"}}/>
 <div id='OTM_seeinsta'  onClick={() => {
   toinsta()
 } }>
   <div id='OTM_seeinsta_logo'> <img src='/images/media/instagram_logo.png' width="40%"/></div>
   <div id='OTM_seeinsta_text'><span>{t("otm.seeinsta1")} <span id='OTM_home_insta'>{t("otm.instagram")}</span> {t("otm.seeinsta2")} </span></div>
 </div>
+              <hr style={{width:"80%", marginLeft:"10%", border:" 0.1vw solid rgb(227 227 227 / 63%)",marginTop:"4vw", marginBottom:"4vw"}}/>
+
+            </div>
+          <div id='OTM_home_photos'>
+            <p id='OTM_home_photo_title'> Photos</p>
+
+            <div className='OTM_home_photos_row'>
+              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8812.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
+              <img src='/images/onthemap/events/IMG_8542.JPG' className='OTM_home_photos'/>
             </div>
 
-
+          </div>
+          <div style={{height:"3vw"}}>&nbsp;</div>
 <Footer/>
 
 

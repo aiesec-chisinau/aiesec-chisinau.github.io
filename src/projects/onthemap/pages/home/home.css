@@ -23,9 +23,7 @@
     bottom: 40px;
 }
 
-#otm_home_about{
-    height: 300px;
-}
+
 
 #otm_site__img{
     width: 100%;
@@ -110,6 +108,44 @@
     -webkit-background-clip: text;
 }
 
+#OTM_contact_midpage{
+    width: 80%;
+    margin-left: 10%;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+
+
+
+
+#OTM_home_photo_title{
+    text-align: center ;
+    font-weight: bold;
+    color: #222222;
+    font-family: 'Lato', sans-serif;
+    font-size: 1.8vw;
+    margin-bottom: 2vw;
+}
+
+
+
+.OTM_home_photos{
+    width: 25%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 2%;
+    font-weight: bold;
+
+}
+.OTM_home_photos_row{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 80%;
+    margin-left: 10%;
+}
+
+
 
 
 
@@ -142,6 +178,25 @@
     }
 
     #OTM_seeinsta_text {
+        font-size: 3vw;
+    }
+    #OTM_contact_midpage{
+        width: 90%;
+        margin-left: 5%;
+    }
+    .OTM_home_photos_row{
+        width: 60%;
+        margin-left: 20%;
+    }
+    .OTM_home_photos{
+        width: 39%;
+        margin-left: 2%;
+        margin-right: 2%;
+        margin-bottom: 2%;
+        font-weight: bold;
+
+    }
+    #OTM_home_photo_title {
         font-size: 3vw;
     }
 }
