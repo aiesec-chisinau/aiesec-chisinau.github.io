@@ -46,7 +46,11 @@
   "otm_more": {
     "title":"About Project",
     "q1": "On short",
-    "a1": "International project based on SDG-8, travel, be sustainable, learn marketing and gain volunteering experience in one of the best projects powered by AIESEC."
+    "a1": "International project based on SDG-8, travel, be sustainable, learn marketing and gain volunteering experience in one of the best projects powered by AIESEC.",
+    "q2": "What is",
+    "a2": "On The Map is an AIESEC brand project that aims to promote sustainable tourism in the Republic of Moldova.",
+    "a2_2": "The project gives participants the chance to travel, learn what sustainable tourism is and gain knowledge in marketing, branding, photography."
+
   },
   "otm_contact": {
     "title":"Contact ",
