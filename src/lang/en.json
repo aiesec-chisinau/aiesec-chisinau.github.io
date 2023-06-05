@@ -30,8 +30,11 @@
   "contact": "Contact Us",
     "signin": "Sign In",
     "joinus": "Join us",
-    "more": "more about project"
-},
+    "more": "more about project",
+    "seeinsta1": "Follow us on ",
+    "instagram": "Instagram ",
+    "seeinsta2": "to know more information."
+  },
   "otm_apply":{
     "period1": "period 1",
     "period1dates": "19 june -30 july",

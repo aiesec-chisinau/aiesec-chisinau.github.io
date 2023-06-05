@@ -15,7 +15,7 @@ const OTMcontactPage: React.FC = () => {
 
     const { t, i18n } = useTranslation('home');
 
-  const TikTokIcon = ({ color = "#000000" }) => {
+  const TikTokIcon = ({ color = "#222222" }) => {
     return (
       <svg
         fill={color}

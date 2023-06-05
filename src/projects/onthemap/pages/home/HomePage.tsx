@@ -11,8 +11,9 @@ const OTMhomePage: React.FC = () => {
 
     const { t, i18n } = useTranslation('home');
 
-
-
+  const toinsta=()=>{
+    window.location.href = "https://www.instagram.com/aiesec.onthemap";
+  }
     const [title, setTitle] = useState("On the Map");
     //'/images/onthemap/logo_black.png'
     useEffect(() => {
@@ -58,7 +59,12 @@ const OTMhomePage: React.FC = () => {
                 <ArrowDownwardIcon id='otm_home_down_arrow'/>
             </div>
             <div id='otm_home_about'>
-
+<div id='OTM_seeinsta'  onClick={() => {
+  toinsta()
+} }>
+  <div id='OTM_seeinsta_logo'> <img src='/images/media/instagram_logo.png' width="40%"/></div>
+  <div id='OTM_seeinsta_text'><span>{t("otm.seeinsta1")} <span id='OTM_home_insta'>{t("otm.instagram")}</span> {t("otm.seeinsta2")} </span></div>
+</div>
             </div>
 
 
