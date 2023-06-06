@@ -17,6 +17,7 @@ import OTMformPage from './projects/onthemap/pages/form/FormPage'
 import OTMcontactPage from './projects/onthemap/pages/contact/Contact'
 import OTMmorePage from './projects/onthemap/pages/more/More'
 import ProjectsPage from './pages/projects/ProjectsPage'
+import OTMofertaPage from './projects/onthemap/utility/oferta_parteneriat/OfertaOTM2'
 
 
 
@@ -48,6 +49,7 @@ function App() {
         <Route path='/onthemap/apply' element={<OTMformPage />} />
         <Route path='/onthemap/contact' element={<OTMcontactPage />} />
         <Route path='/onthemap/more' element={<OTMmorePage />} />
+        <Route path='/onthemap/partnership' element={<OTMofertaPage/>} />
 
 
       </Routes>

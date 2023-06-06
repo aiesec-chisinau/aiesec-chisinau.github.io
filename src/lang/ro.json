@@ -63,6 +63,22 @@
     "a2_2": "Proiectul oferă participanților șansa de a călători, de a învăța ce este turismul sustenabil și de a obține cunoștințe în marketing, branding, fotografie."
 
   },
+  "OTM_oferta": {
+    "pdf_version": "versiunea pdf",
+    "canva_version": "versiunea canva",
+    "OTM2_oferta_ro_summer": "OTM2_oferta_ro_summer'23",
+    "OTM2_oferta_en_summer": "OTM2_oferta_en_summer'23",
+    "OTM2_oferta_pr": "Prezentarea OTM2 ",
+    "po_ro": " Oferta de parteneriat in Romanian",
+    "po_en": " Oferta de parteneriat in English",
+    "po_pr": " Prezentarea ofertei",
+    "for_more": "Pentru mai multe",
+    "or": "sau",
+    "contactus": "contactați-ne",
+    "visit_page": "informați-vă aici",
+    "offer": "Oferta de Parteneriat"
+  },
+
   "otm_contact": {
     "title":"Contact ",
     "ifcontact": "Dacă aveți întrebări suplimentare, nu ezitați să ne contactați",

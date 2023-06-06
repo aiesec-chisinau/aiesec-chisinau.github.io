@@ -55,6 +55,22 @@
     "a2_2": "The project gives participants the chance to travel, learn what sustainable tourism is and gain knowledge in marketing, branding, photography."
 
   },
+  "OTM_oferta": {
+    "pdf_version":"pdf version",
+    "canva_version":"canva version",
+    "OTM2_oferta_ro_summer": "OTM2_oferta_ro_summer'23",
+    "OTM2_oferta_en_summer": "OTM2_oferta_en_summer'23",
+    "OTM2_oferta_pr": "OTM2 Presentation",
+    "po_ro":" Partnership offer in Romanian",
+    "po_en":" Partnership offer in English",
+    "po_pr":" Offer presentation",
+    "for_more": "For more details please",
+    "or": "or",
+    "contactus": "contact us",
+    "visit_page":"visit this page",
+    "offer": "Partnership Offer"
+
+  },
   "otm_contact": {
     "title":"Contact ",
     "ifcontact": "If you have any additional questions, don't hesitate to contact us",
