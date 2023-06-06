@@ -74,7 +74,7 @@ const Header: React.FC = () => {
                                     </Link></li>)}
                                 {location.pathname == '/onthemap' && (
                                     <li className="otm_home_header__el otm_home_header__el--blue"  >
-                                        <Link to='/*'  className="otm_home_btn otm_home_btn--white">{t("otm.signin")} →</Link>
+                                        <Link to='/onthemap/soon'  className="otm_home_btn otm_home_btn--white">{t("otm.signin")} →</Link>
 
                                     </li>
                                 )}
