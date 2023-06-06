@@ -129,7 +129,7 @@ const OTMhomePage: React.FC = () => {
             <div style={{width:"100%", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
               <p id='OTM_home_photo_title'> {t('otm.become_pr')}<span id='OTM_home_partner'>{t("otm.partner")}</span>?</p>
               <div  onClick={() => {
-                window.location.href = "http://localhost:3000/#/onthemap/partnership"
+                window.location.href = "https://aiesec-chisinau.github.io/#/onthemap/partnership"
               } } id='OTM_home_photobutton'>
                 <b> {t("otm.see_more_info")}</b> <br/>
               </div>
