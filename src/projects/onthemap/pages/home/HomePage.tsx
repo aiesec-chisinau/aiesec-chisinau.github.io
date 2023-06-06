@@ -127,7 +127,7 @@ const OTMhomePage: React.FC = () => {
           </div>
             <hr style={{width:"80%", marginLeft:"10%", border:" 0.1vw solid rgb(227 227 227 / 63%)",marginTop:"4vw", marginBottom:"4vw"}}/>
             <div style={{width:"100%", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
-              <p id='OTM_home_photo_title'> {t('otm.become_pr')}<span id='OTM_home_partner'>{t("otm.partner")}</span></p>
+              <p id='OTM_home_photo_title'> {t('otm.become_pr')}<span id='OTM_home_partner'>{t("otm.partner")}</span>?</p>
               <div  onClick={() => {
                 window.location.href = "http://localhost:3000/#/onthemap/partnership"
               } } id='OTM_home_photobutton'>
