@@ -191,11 +191,17 @@
     #otm-home-join_div_center{
         width: 80%;
     }
-
+    #OTM_home_photobutton {
+        font-size: 1.5vw;
+    }
 }
 @media screen and (max-width: 768px) {
     #otm-home-join_div_center {
         width: 100%;
+    }
+    #OTM_home_photobutton {
+       width: 40%;
+        max-width: 100px;
     }
     #OTM_seeinsta {
         width: 80%;
@@ -236,4 +242,9 @@
         font-size: 3vw;
     }
 }
-
+@media screen and (max-width: 450px) {
+#OTM_home_photobutton {
+    width: 40%;
+    max-width: 80px;
+}
+}
