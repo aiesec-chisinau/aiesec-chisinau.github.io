@@ -34,6 +34,16 @@ const OTMofertaPage: React.FC = () => {
       <div id='OTM_oferta'>
 
         <div id='OTM_oferta_choseperiod' >
+          <div  style={{color:"#222222"}} className=' OTM_oferta_choose_title'>
+            <b> {t("OTM_oferta.po_pr")} </b>
+
+          </div>
+          <div  onClick={() => {
+            window.location.href = "https://www.canva.com/design/DAFjkNU7BRA/KbyPTFrwlbXWiRJxuEREsA/view?utm_content=DAFjkNU7BRA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
+          } } className='show OTM_oferta_choose_preiod'>
+            <b> {t("OTM_oferta.OTM2_oferta_pr")}</b> <br/>
+            <span style={{color:"#888888"}}>{t("OTM_oferta.canva_version")}</span>
+          </div>
           <div  style={{color:"#222222" }} className=' OTM_oferta_choose_title'>
             <b>{t("OTM_oferta.po_ro")} </b>
 
@@ -73,16 +83,7 @@ const OTMofertaPage: React.FC = () => {
 
 
 
-          <div  style={{color:"#222222" }} className=' OTM_oferta_choose_title'>
-            <b> {t("OTM_oferta.po_pr")} </b>
 
-          </div>
-          <div  onClick={() => {
-            window.location.href = "https://www.canva.com/design/DAFjkNU7BRA/KbyPTFrwlbXWiRJxuEREsA/view?utm_content=DAFjkNU7BRA&utm_campaign=designshare&utm_medium=link&utm_source=publishsharelink"
-          } } className='show OTM_oferta_choose_preiod'>
-            <b> {t("OTM_oferta.OTM2_oferta_pr")}</b> <br/>
-            <span style={{color:"#888888"}}>{t("OTM_oferta.canva_version")}</span>
-          </div>
 
 
           <div  style={{color:"#999999" ,marginTop:"4vw" }} className=' OTM_oferta_choose_title'>
