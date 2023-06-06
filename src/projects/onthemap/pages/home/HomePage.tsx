@@ -117,9 +117,26 @@ const OTMhomePage: React.FC = () => {
               <img src='/images/onthemap/events/IMG_8831.JPG' className='OTM_home_photos'/>
               <img src='/images/onthemap/events/IMG_9082.JPG' className='OTM_home_photos'/>
             </div>
-
+            <div style={{width:"100%", display:"flex", justifyContent:"center"}}>
+            <div  onClick={() => {
+              window.location.href = "https://aiesec-chisinau.github.io/on-the-map"
+            } } id='OTM_home_photobutton'>
+              <b> {t("otm.photobutton")}</b> <br/>
+            </div>
+            </div>
           </div>
-          <div style={{height:"3vw"}}>&nbsp;</div>
+            <hr style={{width:"80%", marginLeft:"10%", border:" 0.1vw solid rgb(227 227 227 / 63%)",marginTop:"4vw", marginBottom:"4vw"}}/>
+            <div style={{width:"100%", display:"flex", justifyContent:"center", flexDirection:"column", alignItems:"center"}}>
+              <p id='OTM_home_photo_title'> {t('otm.become_pr')}<span id='OTM_home_partner'>{t("otm.partner")}</span></p>
+              <div  onClick={() => {
+                window.location.href = "http://localhost:3000/#/onthemap/partnership"
+              } } id='OTM_home_photobutton'>
+                <b> {t("otm.see_more_info")}</b> <br/>
+              </div>
+            </div>
+
+
+            <div style={{height:"3vw"}}>&nbsp;</div>
 <Footer/>
 
 
