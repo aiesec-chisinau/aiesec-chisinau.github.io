@@ -39,7 +39,7 @@ const OTMofertaPage: React.FC = () => {
 
           </div>
           <div  onClick={() => {
-            window.location.href = "https://aiesec-chisinau.github.io/src/projects/onthemap/utility/oferta_parteneriat/Oferta-de-parteneriat-On-the-map-10.pdf"
+            window.location.href = "https://aiesec-chisinau.github.io/utility/onthemap/Oferta-de-parteneriat-On-the-map-10.pdf"
           } } className='show OTM_oferta_choose_preiod'>
             <b> {t("OTM_oferta.OTM2_oferta_ro_summer")}</b> <br/>
             <span style={{color:"#888888"}}>{t("OTM_oferta.pdf_version")}</span>
@@ -95,7 +95,7 @@ const OTMofertaPage: React.FC = () => {
 
       </div>
       <div id='OTM_oferta_form1'  className="hide"></div>
-
+      
       <Footer/>
 
 
