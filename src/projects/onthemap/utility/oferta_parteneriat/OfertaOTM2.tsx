@@ -28,8 +28,8 @@ const OTMofertaPage: React.FC = () => {
 
 
       <Header/>
-      <div className="OTM_contact_page">
-        <h2 className={'OTM_contact_center_text'}> {t("OTM_oferta.offer")}&nbsp; </h2>
+      <div className="OTM_oferta_page">
+        <h2 className={'OTM_oferta_center_text'}> {t("OTM_oferta.offer")}&nbsp; </h2>
       </div>
       <div id='OTM_oferta'>
 

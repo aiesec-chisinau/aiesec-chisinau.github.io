@@ -3,6 +3,19 @@
     position: relative;
 }
 
+
+.OTM_oferta_page{
+
+    position: relative;
+    font-family: 'Lato', sans-serif;
+    color: #222222;
+}
+.OTM_oferta_center_text{
+    display: flex;
+    align-items: center;
+    font-size: 30px;
+    justify-content: center;
+}
 #OTM_oferta_choseperiod{
     height: 100%;
     display: flex;
