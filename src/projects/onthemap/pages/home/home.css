@@ -170,7 +170,7 @@
 
 
 #OTM_home_photobutton{
-    max-width: 200px;
+
     margin-top: 10px;
     margin-bottom: 10px;
     font-family: 'Lato', sans-serif;
@@ -178,11 +178,11 @@
     display: block;
     border: 1px solid #777777;
     color: #222222;
-    padding: 2px;
+
 
     border-radius: 20vw;
-    padding: 5px;
-    width: 60%;
+    padding: 5px 10px 5px 10px;
+
     text-align: center;
 }
 
@@ -195,33 +195,42 @@
         font-size: 1.5vw;
     }
 }
+
 @media screen and (max-width: 768px) {
     #otm-home-join_div_center {
         width: 100%;
     }
-    #OTM_home_photobutton {
-       width: 40%;
-        max-width: 100px;
-    }
+
     #OTM_seeinsta {
-        width: 80%;
+        width: 96%;
         margin-left: 10%;
     }
+    #OTM_seeinsta_text {
+        font-size: 3.8vw;
+        margin-left: -10%;
+        width: 80%;
+    }
+
+    #OTM_home_photo_title {
+        font-size: 3.8vw;
+    }
+    #OTM_seeinsta_logo {
+        margin-right: 3%;
+        margin-left: -10%;
+    }
 }
+
 
 @media screen and (max-width: 600px) {
     #otm_site__img{
         content: url("/public/images/onthemap/main_mob.png");
     }
 
-    #OTM_seeinsta {
-        width: 100%;
-        margin-left: 0;
+    #OTM_home_photobutton{
+        font-size: 2vw;
     }
 
-    #OTM_seeinsta_text {
-        font-size: 3vw;
-    }
+
     #OTM_contact_midpage{
         width: 90%;
         margin-left: 5%;
@@ -238,13 +247,11 @@
         font-weight: bold;
 
     }*/
-    #OTM_home_photo_title {
-        font-size: 3vw;
-    }
+
 }
 @media screen and (max-width: 450px) {
 #OTM_home_photobutton {
-    width: 40%;
+
     max-width: 80px;
 }
 }
