@@ -84,7 +84,7 @@ const OTMhomePage: React.FC = () => {
                           <Link to='/onthemap/apply' id='otm_home-joinus-button'   className="otm_home_btn">{t("otm.joinus")}</Link>
                           <Link to='/onthemap/contact' id='otm_home-joinus-button2'   className="otm_home_btn">Contact</Link>
 </div>
-<Link to={'/onthemap/more'} style={{color:"#8198ae", fontSize:'14px', width:"200px", marginTop:"1vw", fontFamily:"Lato"}}>{t("otm.more")} </Link>
+<Link to={'/onthemap/more'} style={{color:"#8198ae", fontSize:'14px', width:"200px", marginTop:"1.5vw", fontFamily:"Lato"}}>{t("otm.more")} </Link>
                         </div>
 
                          </div>
@@ -135,6 +135,7 @@ const OTMhomePage: React.FC = () => {
               </div>
             </div>
 
+            <div style={{height:"3vw"}}>&nbsp;</div>
 
             <div style={{height:"3vw"}}>&nbsp;</div>
 <Footer/>
