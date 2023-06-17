@@ -19,6 +19,7 @@ import OTMmorePage from './projects/onthemap/pages/more/More'
 import ProjectsPage from './pages/projects/ProjectsPage'
 import OTMofertaPage from './projects/onthemap/utility/oferta_parteneriat/OfertaOTM2'
 import OTMunderworkPage from './projects/onthemap/utility/under_work/Under_work'
+import OTMopening from './projects/onthemap/utility/opening/Opening'
 
 
 
@@ -54,7 +55,7 @@ function App() {
         <Route path='/onthemap/partnership' element={<OTMofertaPage/>} />
         <Route path='/onthemap/partnership' element={<OTMofertaPage/>} />
         <Route path='/onthemap/soon' element={<OTMunderworkPage/>} />
-
+        <Route path='/onthemap/opening' element={<OTMopening/>} />
 
 
       </Routes>
