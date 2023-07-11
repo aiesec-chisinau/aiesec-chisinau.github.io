@@ -1,2 +1,19 @@
 
-  
+.LatoMedium{
+    font-family: 'Lato-Medium', sans-serif;
+}
+
+#home_top_infobanner{
+    padding:  0.8vw 0 0.8vw 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #2D2D2D;
+    background-color: #ECECEC;
+    font-size: 1vw;
+}
+
+#home_header{
+    width: 100%;
+}
+

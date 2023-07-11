@@ -1,105 +1,48 @@
-#navbar-style {
-  background-color: #037ef3 /*rgba(255,255,255,0.8)*/;
-  color: rgb(6, 32, 39);
-  box-shadow: none !important;
-  -moz-transform: scale(0.5);
+.LatoMedium{
+  font-family: 'Lato-Medium', sans-serif;
 }
-#navbar-color{
-  background-color: #037ef3;
+#navbar_div{
+  display: flex;
+  max-height: 3vw;
+  padding: 1vw 0 1vw 0;
+  font-size: 1.15vw;
 }
-#nav-meniu-icon{
-  color: white;
+#navbar_logo{
+  max-width: 10vw;
+  margin-left: 1vw;
 }
-#nav-avatar{
-  width: 30px!important;
-  height: 30px!important;
-}
+#navbar_lang{
 
-.nav-no-full-upercase{
-  text-transform:none;
-}
-#navbar-height{
-  height: 45px!important;
-  min-height: 45px !important;
-}
-.nav-menu-button-large{color: inherit;
-  text-decoration: none!important;
-
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: row;
 
 }
-
-.navbar-text{color:rgb(6,32,39) !important;}
-@media screen and (max-width: 900px){
-  #navbar-height{
-    height: 56px!important;
-    min-height: 56px !important;
-  }
+#navbar_options{
+  width: 73vw;
+  display: flex;
 }
+.navbar_menu_option{
 
-@media screen and (min-width: 900px){
-  #navbar-height{
-    margin-left: 10%;
-    margin-right: 10%;
-  }
+  padding: 0 1vw 0 1vw ;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  justify-content: flex-start;
 }
-
-
-
-/*
-import { Link } from "react-router-dom"
-import './navbar.css'
-import i18n from "../../i18n";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-const Navbar =()=>{
-const { t, i18n } = useTranslation('home');
-const onClickLanguageChange = (e: any) => {
-                                          const language = e.target.value;
-                                          i18n.changeLanguage(language); //change the language
-                                        }
-
-useEffect(() => {
-                const storedLanguage = localStorage.getItem("language");
-if (storedLanguage) {
-  i18n.changeLanguage(storedLanguage);
+#navbar_search_icon{
+  border-right: solid 0.15vw #222222 ;
+  padding: 0 1vw 0 1vw ;
 }
-}, [i18n]);
-
-const handleChange = (event: { target: { value: any; }; }) => {
-                                                              const language = event.target.value;
-                                                              i18n.changeLanguage(language);
-                                                              localStorage.setItem("language", language);
-                                                            };
-return (
-<>
-<header className="header">
-<a href="" className="logo"><img src='/images/blue_logo.png' height={'20px'}/></a>
-<input className="menu-btn" type="checkbox" id="menu-btn" />
-<label className="menu-icon" htmlFor="menu-btn"><span className="navicon"></span></label>
-<ul className="menu">
-
-<li><Link to="/projects">{t("navbar.projects")}</Link></li>
-<li><Link to="/shop">Shop</Link></li>
-<li><Link to="/about">{t("navbar.about")}</Link></li>
-
-<li><Link to="/contact">{t("navbar.contact")}</Link></li>
-
-<li><Link to="/login">{t("navbar.login")}</Link></li>
-<li id="li_lang_selection">
-<span className="inline" id="lang_description" >{t("navbar.language")}: </span>
-<select className="inline" id="lang_selection" value={i18n.language} onChange={onClickLanguageChange}>
-<option value="en" >en</option>
-<option value="ro" >ro</option>
-
-</select>
-</li>
-</ul>
-</header>
-<div id="under_nav_header"></div>
-</>
-
-)
+#navbar_login_icon{
+  border-right: solid 0.15vw #222222 ;
+  padding: 0 1vw 0 1vw ;
 }
-
-export default Navbar;
-*/
+#navbar_langiage{
+  padding-left: 1vw;
+  display: flex;
+}
+#navbar_downarrow{
+  padding-left: 0.5vw;
+}

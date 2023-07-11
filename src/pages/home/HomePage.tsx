@@ -11,11 +11,12 @@ const HomePage: React.FC = () => {
 
   return (
     <div>
+      <div className='LatoMedium' id='home_top_infobanner'> Some products, functionality and/or services may not be available in your country.</div>
       <Navbar />
-
+<img id='home_header' src='/images/home/home_header_nr1.png'/>
 
      
-      <h1>{t("home.home")}</h1>
+
 
     </div>
   );
