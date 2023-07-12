@@ -20,6 +20,7 @@ import ProjectsPage from './pages/projects/ProjectsPage'
 import OTMofertaPage from './projects/onthemap/utility/oferta_parteneriat/OfertaOTM2'
 import OTMunderworkPage from './projects/onthemap/utility/under_work/Under_work'
 import OTMopening from './projects/onthemap/utility/opening/Opening'
+import Demo from './pages/demo/Demo'
 
 
 
@@ -40,8 +41,8 @@ function App() {
         <Route path='/login' element={<LoginPage />} />
         <Route path='/projects' element={<ProjectsPage/>} />
 
-
-
+        // demo
+        <Route path='/demo' element={<Demo/>} />
 
         // projects
 

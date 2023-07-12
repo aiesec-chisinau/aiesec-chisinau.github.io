@@ -5,7 +5,7 @@
   display: flex;
   max-height: 3vw;
   padding: 1vw 0 1vw 0;
-  font-size: 1.15vw;
+  font-size: 1vw;
 }
 #navbar_logo{
   max-width: 10vw;
@@ -24,7 +24,7 @@
   display: flex;
 }
 .navbar_menu_option{
-
+cursor: pointer;
   padding: 0 1vw 0 1vw ;
   display: flex;
   justify-content: center;
@@ -32,11 +32,11 @@
   justify-content: flex-start;
 }
 #navbar_search_icon{
-  border-right: solid 0.15vw #222222 ;
+  border-right: solid 0.1vw #222222 ;
   padding: 0 1vw 0 1vw ;
 }
 #navbar_login_icon{
-  border-right: solid 0.15vw #222222 ;
+  border-right: solid 0.1vw #222222 ;
   padding: 0 1vw 0 1vw ;
 }
 #navbar_langiage{
@@ -45,4 +45,8 @@
 }
 #navbar_downarrow{
   padding-left: 0.5vw;
+}
+
+.navbar_svg_icons{
+  width: 1.15vw;
 }

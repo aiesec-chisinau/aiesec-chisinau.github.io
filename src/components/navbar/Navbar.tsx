@@ -60,9 +60,9 @@ console.log('logged')
        </div>
 
        <div id='navbar_lang' className='LatoMedium'>
-         <div id='navbar_search_icon'><img src='/images/svg/search.svg'/></div>
-         <div id='navbar_login_icon'><img src='/images/svg/login.svg'/></div>
-         <div id='navbar_langiage'>{t("navbar.language")}<img id='navbar_downarrow' src='/images/svg/down_arrow_v2.svg'/></div>
+         <div id='navbar_search_icon'><img className='navbar_svg_icons' src='/images/svg/search.svg'/></div>
+         <div id='navbar_login_icon'><img className='navbar_svg_icons' src='/images/svg/login.svg'/></div>
+         <div id='navbar_langiage'>{t("navbar.language")}<img id='navbar_downarrow' className='navbar_svg_icons'  src='/images/svg/down_arrow_v2.svg'/></div>
 
        </div>
      </div>
