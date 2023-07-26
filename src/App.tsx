@@ -21,6 +21,7 @@ import OTMofertaPage from './projects/onthemap/utility/oferta_parteneriat/Oferta
 import OTMunderworkPage from './projects/onthemap/utility/under_work/Under_work'
 import OTMopening from './projects/onthemap/utility/opening/Opening'
 import Demo from './pages/demo/Demo'
+import Soon from './pages/soon/Soon'
 
 
 
@@ -40,7 +41,13 @@ function App() {
         <Route path='/contact' element={<ContactPage />} />
         <Route path='/login' element={<LoginPage />} />
         <Route path='/projects' element={<ProjectsPage/>} />
+        <Route path='/soon' element={<Soon/>} />
 
+        // aplication
+        <Route path='/apply' element={<Soon/>} />
+
+        //executive board info
+        <Route path='/ebtwenties' element={<Soon/>} />
         // demo
         <Route path='/demo' element={<Demo/>} />
 

@@ -15,7 +15,8 @@
   },
   "home": {
     "lang": "ro",
-    "home": "Ne scuzati, web-siteul este inca in proces de creare"
+    "home": "Ne scuzati, web-siteul este inca in proces de creare",
+    "scroll_down": "Scroll Down"
   },
     "login": {
         "goback": "inapoi"

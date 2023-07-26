@@ -3,6 +3,7 @@ import './navbar.css'
 import i18n from "../../i18n";
 import { useTranslation } from "react-i18next";
 import { useEffect } from "react";
+import { Link } from 'react-router-dom'
 
 
 let lang_option="";
@@ -53,10 +54,11 @@ console.log('logged')
      <div id='navbar_div'>
        <div id='navbar_logo'> <img style={{width:'100%'}} src='/images/logo.png'/></div>
        <div id='navbar_options' className='LatoMedium'>
-         <div className='navbar_menu_option'>{t("navbar.projects")}</div>
-         <div className='navbar_menu_option'>{t("navbar.shop")}</div>
-         <div className='navbar_menu_option'>{t("navbar.about")}</div>
-         <div className='navbar_menu_option'>{t("navbar.contact")}</div>
+         <Link to="/projects" className='navbar_menu_option' id='bavbar_nmenu_projects' >{t("navbar.projects")}</Link>
+         <Link to="/soon" className='navbar_menu_option' id='bavbar_nmenu_shop' >{t("navbar.shop")}</Link>
+         <Link to="/about" className='navbar_menu_option' id='bavbar_nmenu_about' >{t("navbar.about")}</Link>
+         <Link to="/soon" className='navbar_menu_option' id='bavbar_nmenu_contact' >{t("navbar.contact")}</Link>
+
        </div>
 
        <div id='navbar_lang' className='LatoMedium'>

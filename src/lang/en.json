@@ -15,7 +15,8 @@
   },
     "home": {
         "lang": "en",
-      "home": "Excuse us, the website is still under construction"
+      "home": "Excuse us, the website is still under construction",
+      "scroll_down": "Scroll Down"
     },
     "login": {
         "goback": "go back"
