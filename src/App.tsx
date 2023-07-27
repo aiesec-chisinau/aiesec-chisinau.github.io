@@ -22,6 +22,7 @@ import OTMunderworkPage from './projects/onthemap/utility/under_work/Under_work'
 import OTMopening from './projects/onthemap/utility/opening/Opening'
 import Demo from './pages/demo/Demo'
 import Soon from './pages/soon/Soon'
+import Apply_demo from './pages/demo/Apply_demo'
 
 
 
@@ -45,6 +46,7 @@ function App() {
 
         // aplication
         <Route path='/apply' element={<Soon/>} />
+        <Route path='/apply/demo' element={<Apply_demo/>} />
 
         //executive board info
         <Route path='/ebtwenties' element={<Soon/>} />
