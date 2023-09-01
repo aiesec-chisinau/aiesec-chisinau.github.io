@@ -23,6 +23,8 @@ import OTMopening from './projects/onthemap/utility/opening/Opening'
 import Demo from './pages/demo/Demo'
 import Soon from './pages/soon/Soon'
 import Apply_demo from './pages/demo/Apply_demo'
+import Apply from './pages/apply/Apply'
+import { Frame } from './pages/test/test'
 
 
 
@@ -45,14 +47,13 @@ function App() {
         <Route path='/soon' element={<Soon/>} />
 
         // aplication
-        <Route path='/apply' element={<Soon/>} />
+        <Route path='/apply' element={<Apply/>} />
         <Route path='/apply/demo' element={<Apply_demo/>} />
 
         //executive board info
         <Route path='/ebtwenties' element={<Soon/>} />
         // demo
         <Route path='/demo' element={<Demo/>} />
-
         // projects
 
         //on-the-map

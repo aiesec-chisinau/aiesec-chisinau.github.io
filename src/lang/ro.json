@@ -90,6 +90,12 @@
     "ifcontact": "Dacă aveți întrebări suplimentare, nu ezitați să ne contactați",
     "iflocation": "Adresa noastră fizică:",
     "ifsocial": "Our social media:"
+  },
+  "apply": {
+    "lang":"RO",
+    "nolang":"EN",
+    "please_check1": "Plase check the boxes if you:",
+    "please_check2": "(will not influence the results)"
   }
 
 

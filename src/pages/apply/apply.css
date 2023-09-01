@@ -1,0 +1,77 @@
+
+#apply_page{
+    font-family: 'Lato ', sans-serif;
+    font-size: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: center;
+
+
+}
+
+#apply_page_inside{
+    width: 100%;
+    max-width: 400px;
+
+
+
+}
+
+#apply_lang_bold{
+    font-weight: bold;
+}
+#apply_lang_thin{
+    font-family: 'Lato-Light', sans-serif;
+}
+
+#apply_block2_img1{
+    margin-top: 20px;
+    width: 50%;
+}
+#apply_top {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5%;
+}
+#apply_nav_img{
+    width: auto;
+    height: 20px;
+}
+#apply_div2{
+    display: flex;
+    justify-content: center;
+}
+
+#apply-lang{
+    padding-right: 17px;
+}
+#apply_div3{
+
+
+    width: 90%;
+    margin: 5%;
+}
+#apply_div3_title{
+color: #121826;
+font-family: Lato;
+font-size: 10px;
+font-style: normal;
+font-weight: 400;
+line-height: normal;
+    margin-top: 10px;
+}
+#apply_div3_title_gray{
+color: #C5C2C2;}
+
+
+.apply_check_div{
+    display: flex;
+    align-items: center;
+    margin: 1px 0 0 5px;
+}
+
+.apply_checkbox{
+    margin:0px 5px 0 0;
+}

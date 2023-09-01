@@ -82,5 +82,10 @@
     "ifcontact": "If you have any additional questions, don't hesitate to contact us",
     "iflocation": "Our physical address:",
     "ifsocial": "Rețelele noastre sociale:"
+  },
+  "apply": {
+    "lang":"EN",
+    "nolang":"RO",
+    "please_check": "Plase check the boxes if you: (will not influence the results)"
   }
 }
