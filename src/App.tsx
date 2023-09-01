@@ -8,6 +8,7 @@ import ContactPage from "./pages/contact/ContactPage";
 import LoginPage from "./pages/login/LoginPage";
 import NotFound from "./pages/404/NotFound";
 
+import Soon from './pages/soon/Soon'
 
 //project routing imports
 
@@ -20,12 +21,17 @@ import ProjectsPage from './pages/projects/ProjectsPage'
 import OTMofertaPage from './projects/onthemap/utility/oferta_parteneriat/OfertaOTM2'
 import OTMunderworkPage from './projects/onthemap/utility/under_work/Under_work'
 import OTMopening from './projects/onthemap/utility/opening/Opening'
-import Demo from './pages/demo/Demo'
-import Soon from './pages/soon/Soon'
-import Apply_demo from './pages/demo/Apply_demo'
-import Apply from './pages/apply/Apply'
-import { Frame } from './pages/test/test'
 
+
+
+//demo
+import Demo from './pages/demo/Demo'
+import Apply_demo from './pages/demo/Apply_demo'
+
+
+
+//apply
+import Apply from './pages/apply/Apply'
 
 
 

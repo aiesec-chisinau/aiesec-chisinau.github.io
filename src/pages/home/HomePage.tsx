@@ -30,19 +30,19 @@ const HomePage: React.FC = () => {
       </div>
       <div id='home_block3'>
         <div className='home_block3_divs'>
-         <span>69</span>
+         <span>-</span>
           <span>memebers</span>
         </div>
         <div className='home_block3_divs'>
-          <span>69</span>
+          <span>-</span>
           <span>memebers</span>
         </div>
         <div className='home_block3_divs'>
-          <span>69</span>
+          <span>-</span>
           <span>memebers</span>
         </div>
         <div className='home_block3_divs'>
-          <span>69</span>
+          <span>-</span>
           <span>memebers</span>
         </div>
       </div>
