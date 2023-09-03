@@ -1,19 +1,18 @@
-import React, {useEffect, useState} from 'react';
-import { Link } from 'react-router-dom';
-import axios from 'axios';
-import { Container, Form, Button, Alert } from 'react-bootstrap';
-import './contact.css';
-import { useTranslation } from 'react-i18next';
+import React, { useEffect, useState } from "react";
+import { Link } from "react-router-dom";
+import axios from "axios";
+import { Container, Form, Button, Alert } from "react-bootstrap";
+import "./contact.css";
+import { useTranslation } from "react-i18next";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 
-import ConnectWithoutContactIcon from '@mui/icons-material/ConnectWithoutContact';
-import InstagramIcon from '@mui/icons-material/Instagram';
-import FacebookIcon from '@mui/icons-material/Facebook';
-import LinkedInIcon from '@mui/icons-material/LinkedIn'
+import ConnectWithoutContactIcon from "@mui/icons-material/ConnectWithoutContact";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import LinkedInIcon from "@mui/icons-material/LinkedIn";
 const OTMcontactPage: React.FC = () => {
-
-    const { t, i18n } = useTranslation('home');
+  const { t, i18n } = useTranslation("home");
 
   const TikTokIcon = ({ color = "#222222" }) => {
     return (
@@ -29,80 +28,125 @@ const OTMcontactPage: React.FC = () => {
     );
   };
 
-    const [title, setTitle] = useState("On the Map");
-    //'/images/onthemap/logo_black.png'
-    useEffect(() => {
-        // This will run when the page first loads and whenever the title changes
-        document.title = title;
+  const [title, setTitle] = useState("On the Map");
+  //'/images/onthemap/logo_black.png'
+  useEffect(() => {
+    // This will run when the page first loads and whenever the title changes
+    document.title = title;
+  }, [title]);
 
-    }, [title]);
+  return (
+    <>
+      <Header />
 
-
-    return (
-
-      <>
-
-
-          <Header/>
-
-        <div className="OTM_contact_page">
-          <h2 className={'OTM_contact_center_text'}> {t("otm_contact.title")}&nbsp; <ConnectWithoutContactIcon/></h2>
-        </div>
-        <div id='OTM_contact_midpage'><br/>
-          <p><b>{t("otm_contact.ifcontact")}</b></p>
-<ul style={{lineHeight:"1.5"}}>
-  <li>Veronica Tusca - OCVP Delegates
-    &nbsp;<Link to={'mailto:veronica.tusca@aiesec.net'}>veronica.tusca@aiesec.net </Link>
-    &nbsp;<Link style={{color:"#222222"}} to={'tel::+373(79)184319'}>+373((79) 184-319 </Link></li>
-  <li>Cristian Brinza - OCVP S&M
-    &nbsp;<Link to={'mailto:cristian.brinza@aiesec.net'}>cristian.brinza@aiesec.net </Link>
-    &nbsp;<Link style={{color:"#222222"}} to={'tel::+373(68)745434'}>+373(68) 745-434 </Link></li>
-  <li>Patricia Spivacenco - OC President
-    &nbsp;<Link to={'mailto:patricia.spivacenco@aiesec.net'}>patricia.spivacenco@aiesec.net </Link>
-    &nbsp;<Link style={{color:"#222222"}} to={'tel::+373(60)737655'}>+373(60) 737-655 </Link></li>
-</ul>
-          <p><b>{t("otm_contact.iflocation")}</b></p>
-          <div className="mapouter">
-            <div className="gmap_canvas">
-              <iframe width="300" height="200" id="gmap_canvas"
-                      src="https://maps.google.com/maps?q=Bloc%20C,%20Strada%20C%C4%83priana%2050,%20Chi%C8%99in%C4%83u,%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed"
-                      frameBorder="0" scrolling="no"></iframe>
-             <br/>
-             </div>
+      <div className="OTM_contact_page">
+        <h2 className={"OTM_contact_center_text"}>
+          {" "}
+          {t("otm_contact.title")}&nbsp; <ConnectWithoutContactIcon />
+        </h2>
+      </div>
+      <div id="OTM_contact_midpage">
+        <br />
+        <p>
+          <b>{t("otm_contact.ifcontact")}</b>
+        </p>
+        <ul style={{ lineHeight: "1.5" }}>
+          <li>
+            Veronica Tusca - OCVP Delegates &nbsp;
+            <Link to={"mailto:veronica.tusca@aiesec.net"}>
+              veronica.tusca@aiesec.net{" "}
+            </Link>
+            &nbsp;
+            <Link style={{ color: "#222222" }} to={"tel::+373(79)184319"}>
+              +373((79) 184-319{" "}
+            </Link>
+          </li>
+          <li>
+            Cristian Brinza - OCVP S&M &nbsp;
+            <Link to={"mailto:cristian.brinza@aiesec.net"}>
+              cristian.brinza@aiesec.net{" "}
+            </Link>
+            &nbsp;
+            <Link style={{ color: "#222222" }} to={"tel::+373(68)745434"}>
+              +373(68) 745-434{" "}
+            </Link>
+          </li>
+          <li>
+            Patricia Spivacenco - OC President &nbsp;
+            <Link to={"mailto:patricia.spivacenco@aiesec.net"}>
+              patricia.spivacenco@aiesec.net{" "}
+            </Link>
+            &nbsp;
+            <Link style={{ color: "#222222" }} to={"tel::+373(60)737655"}>
+              +373(60) 737-655{" "}
+            </Link>
+          </li>
+        </ul>
+        <p>
+          <b>{t("otm_contact.iflocation")}</b>
+        </p>
+        <div className="mapouter">
+          <div className="gmap_canvas">
+            <iframe
+              width="300"
+              height="200"
+              id="gmap_canvas"
+              src="https://maps.google.com/maps?q=Bloc%20C,%20Strada%20C%C4%83priana%2050,%20Chi%C8%99in%C4%83u,%20Moldova&t=&z=13&ie=UTF8&iwloc=&output=embed"
+              frameBorder="0"
+              scrolling="no"
+            ></iframe>
+            <br />
           </div>
-          <p><b>{t("otm_contact.ifsocial")}</b></p>
-          <div className='OTM_contact_social'>
-            <Link  style={{margin:"0 5px 0 5px"}} to="https://www.instagram.com/aiesec.onthemap"
-                   className="otm_footer__social-l">
-              <InstagramIcon  style={{color:"#222222"}}/> </Link>
-            |
-            <Link  style={{margin:"0 5px 0 5px"}} to="https://www.facebook.com/aiesec.in.chisinau"
-                   className="otm_footer__social-l">
-              <FacebookIcon  style={{color:"#222222"}}/> </Link>
-
-            <Link  style={{margin:"0 5px 0 5px"}} to="https://www.instagram.com/aiesec_in_chisinau/"
-                   className="otm_footer__social-l">
-              <InstagramIcon  style={{color:"#222222"}}/> </Link>
-            <Link  style={{margin:"0 5px 0 5px"}} to="https://www.tiktok.com/@aiesec_in_chisinau/"
-                   className="otm_footer__social-l">
-              <div style={{width: "23px",
-                height: "23px"}}><TikTokIcon /></div> </Link>
-            <Link  style={{margin:"0 5px 0 5px"}} to="https://www.linkedin.com/showcase/aiesec-in-chisinau/"
-                   className="otm_footer__social-l">
-              <LinkedInIcon  style={{color:"#222222"}}/> </Link>
-
-          </div>
-          <div style={{height:"3vw"}}>&nbsp;</div>
         </div>
+        <p>
+          <b>{t("otm_contact.ifsocial")}</b>
+        </p>
+        <div className="OTM_contact_social">
+          <Link
+            style={{ margin: "0 5px 0 5px" }}
+            to="https://www.instagram.com/aiesec.onthemap"
+            className="otm_footer__social-l"
+          >
+            <InstagramIcon style={{ color: "#222222" }} />{" "}
+          </Link>
+          |
+          <Link
+            style={{ margin: "0 5px 0 5px" }}
+            to="https://www.facebook.com/aiesec.in.chisinau"
+            className="otm_footer__social-l"
+          >
+            <FacebookIcon style={{ color: "#222222" }} />{" "}
+          </Link>
+          <Link
+            style={{ margin: "0 5px 0 5px" }}
+            to="https://www.instagram.com/aiesec_in_chisinau/"
+            className="otm_footer__social-l"
+          >
+            <InstagramIcon style={{ color: "#222222" }} />{" "}
+          </Link>
+          <Link
+            style={{ margin: "0 5px 0 5px" }}
+            to="https://www.tiktok.com/@aiesec_in_chisinau/"
+            className="otm_footer__social-l"
+          >
+            <div style={{ width: "23px", height: "23px" }}>
+              <TikTokIcon />
+            </div>{" "}
+          </Link>
+          <Link
+            style={{ margin: "0 5px 0 5px" }}
+            to="https://www.linkedin.com/showcase/aiesec-in-chisinau/"
+            className="otm_footer__social-l"
+          >
+            <LinkedInIcon style={{ color: "#222222" }} />{" "}
+          </Link>
+        </div>
+        <div style={{ height: "3vw" }}>&nbsp;</div>
+      </div>
 
-          <Footer/>
-
-
-
-
-      </>
-    );
+      <Footer />
+    </>
+  );
 };
-
 
 export default OTMcontactPage;

@@ -1,88 +1,82 @@
-#otm_footer{
-    background-color: rgb(34, 34, 34);
-    width: 100%;
+#otm_footer {
+  background-color: rgb(34, 34, 34);
+  width: 100%;
 
-    position:absolute;
-    bottom:0;
-    height: 80px;
+  position: absolute;
+  bottom: 0;
+  height: 80px;
+}
+.otm_footer_container {
+  display: flex;
+  justify-items: center;
+  height: 100%;
+}
+.otm_footer_row {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+.otm_footer__title {
+  font-family: "Lato";
+  font-size: 18px;
+  margin: 0;
+  margin-left: 0px;
+  margin-left: 10px;
+  display: inline-block;
+  line-height: 18px;
+  vertical-align: middle;
+  color: #3a9fff;
+}
 
-}
-.otm_footer_container{
-    display: flex;
-    justify-items: center;
-    height: 100%;
-}
-.otm_footer_row{
-    display: inline-block;
-    height: 100%;
-    width: 100%;
-}
-.otm_footer__title{
-    font-family: 'Lato';
-    font-size: 18px;
-    margin: 0;
-    margin-left: 0px;
-    margin-left: 10px;
-    display: inline-block;
-    line-height: 18px;
-    vertical-align: middle;
-    color:#3a9fff;
-}
-
-.otm_footer__light{
-    font-family: 'Lato';
-    color:#fff;
-
+.otm_footer__light {
+  font-family: "Lato";
+  color: #fff;
 }
 
 .otm_footer__social {
-    float: right;
+  float: right;
 }
 
 .otm_footer__social-l {
-    margin-left: 15px;
-    vertical-align: middle;
+  margin-left: 15px;
+  vertical-align: middle;
 }
 .otm_footer-meniu-icon {
-    color: white;
+  color: white;
 }
 
-.otm_footer-vertical-center{
-    display: flex;
-    justify-items: center;
-    height: 100%;
+.otm_footer-vertical-center {
+  display: flex;
+  justify-items: center;
+  height: 100%;
 
-    align-items: center;
+  align-items: center;
 }
-#otm-footer-bg-space{
-    height: 80px;
-}
-
-
-#otm_footer-left-side{
-    float: left;
-    display: flex;
-    margin-left: 50px;
+#otm-footer-bg-space {
+  height: 80px;
 }
 
-#otm_footer-right-side{
-    float: right;
-    display: flex;
-    margin-right: 50px;
+#otm_footer-left-side {
+  float: left;
+  display: flex;
+  margin-left: 50px;
 }
 
-
-
+#otm_footer-right-side {
+  float: right;
+  display: flex;
+  margin-right: 50px;
+}
 
 @media screen and (max-width: 455px) {
-    #otm_footer-left-side {
-        margin-left: 10px;
-    }
+  #otm_footer-left-side {
+    margin-left: 10px;
+  }
 
-    #otm_footer-right-side {
-        margin-right: 10px;
-    }
-    .otm_footer__title{
-        font-size: 14px;
-    }
+  #otm_footer-right-side {
+    margin-right: 10px;
+  }
+  .otm_footer__title {
+    font-size: 14px;
+  }
 }

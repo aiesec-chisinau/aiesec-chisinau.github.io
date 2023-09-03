@@ -1,21 +1,18 @@
-#goback{
-    margin-top: 20px;
-    margin-left: 20px;
+#goback {
+  margin-top: 20px;
+  margin-left: 20px;
 }
 
 .container {
-    height: 90vh;
-    position: relative;
-    display: flex;
+  height: 90vh;
+  position: relative;
+  display: flex;
   justify-content: center;
   align-items: center;
-  }
-  
-  .child {
+}
 
-    height: 50px;
+.child {
+  height: 50px;
 
-    /* Center vertically and horizontally */
-   
-    
-  }
+  /* Center vertically and horizontally */
+}

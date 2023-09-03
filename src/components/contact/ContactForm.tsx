@@ -1,10 +1,4 @@
-
-const ContactForm =()=>{
-      return (
-        <>
-        ready soon
-      </>
-        
-      )
-}
+const ContactForm = () => {
+  return <>ready soon</>;
+};
 export default ContactForm;

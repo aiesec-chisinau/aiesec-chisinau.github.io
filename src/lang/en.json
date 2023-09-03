@@ -1,34 +1,33 @@
 {
-    "navbar": {
-      "home": "Home",
-      "about": "About us",
-      "shop": "Shop",
-      "contact": "Contact",
-      "projects":"Our Projects",
-      "login": "Login",
-      "language":"Language"
-    },
+  "navbar": {
+    "home": "Home",
+    "about": "About us",
+    "shop": "Shop",
+    "contact": "Contact",
+    "projects": "Our Projects",
+    "login": "Login",
+    "language": "Language"
+  },
   "projects": {
     "seemore": "see more...",
     "aboutprojects": "About our projects",
     "actual": "Ongoing:"
   },
-    "home": {
-        "lang": "en",
-      "home": "Excuse us, the website is still under construction",
-      "scroll_down": "Scroll Down"
-    },
-    "login": {
-        "goback": "go back"
-    },
-    "about":{
-        "page_title":"AIESEC in Chisinau",
-        "who_are_we":"How are we?",
-      "who_are_we_text": "Suntem cea mai mare organizație de voluntariat din lume, cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.\n\n\n\nVoluntarii noștri sunt tineri, studenți sau elevi, cu vârsta cuprinsă între 18 și 30 ani.\n\n\n\nEi sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership."
-
-    },
-  "otm":{
-  "contact": "Contact Us",
+  "home": {
+    "lang": "en",
+    "home": "Excuse us, the website is still under construction",
+    "scroll_down": "Scroll Down"
+  },
+  "login": {
+    "goback": "go back"
+  },
+  "about": {
+    "page_title": "AIESEC in Chisinau",
+    "who_are_we": "How are we?",
+    "who_are_we_text": "Suntem cea mai mare organizație de voluntariat din lume, cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.\n\n\n\nVoluntarii noștri sunt tineri, studenți sau elevi, cu vârsta cuprinsă între 18 și 30 ani.\n\n\n\nEi sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership."
+  },
+  "otm": {
+    "contact": "Contact Us",
     "signin": "Sign In",
     "joinus": "Join us",
     "more": "more about project",
@@ -42,9 +41,9 @@
     "see_more_info": "see more info here",
     "commigsoon": "comming soon"
   },
-  "otm_apply":{
+  "otm_apply": {
     "period0": "On the Map 1",
-    "period0dates":"6 february - 18 march",
+    "period0dates": "6 february - 18 march",
     "period1": "OTM 2 period 1",
     "period1dates": "19 june -30 july",
     "period2": "OTM 2 period 2",
@@ -53,39 +52,37 @@
     "period3dates": "23 august - 2 october"
   },
   "otm_more": {
-    "title":"About Project",
+    "title": "About Project",
     "q1": "On short",
     "a1": "International project based on SDG-8, travel, be sustainable, learn marketing and gain volunteering experience in one of the best projects powered by AIESEC.",
     "q2": "What is",
     "a2": "On The Map is an AIESEC brand project that aims to promote sustainable tourism in the Republic of Moldova.",
     "a2_2": "The project gives participants the chance to travel, learn what sustainable tourism is and gain knowledge in marketing, branding, photography."
-
   },
   "OTM_oferta": {
-    "pdf_version":"pdf version",
-    "canva_version":"canva version",
+    "pdf_version": "pdf version",
+    "canva_version": "canva version",
     "OTM2_oferta_ro_summer": "OTM2_oferta_ro_summer'23",
     "OTM2_oferta_en_summer": "OTM2_oferta_en_summer'23",
     "OTM2_oferta_pr": "OTM2 Presentation",
-    "po_ro":" Partnership offer in Romanian",
-    "po_en":" Partnership offer in English",
-    "po_pr":" Offer presentation",
+    "po_ro": " Partnership offer in Romanian",
+    "po_en": " Partnership offer in English",
+    "po_pr": " Offer presentation",
     "for_more": "For more details please",
     "or": "or",
     "contactus": "contact us",
-    "visit_page":"visit this page",
+    "visit_page": "visit this page",
     "offer": "Partnership Offer"
-
   },
   "otm_contact": {
-    "title":"Contact ",
+    "title": "Contact ",
     "ifcontact": "If you have any additional questions, don't hesitate to contact us",
     "iflocation": "Our physical address:",
     "ifsocial": "Rețelele noastre sociale:"
   },
   "apply": {
-    "lang":"EN",
-    "nolang":"RO",
+    "lang": "EN",
+    "nolang": "RO",
     "please_check1": "Plase check the boxes if you:",
     "please_check2": "(will not influence the results)"
   }

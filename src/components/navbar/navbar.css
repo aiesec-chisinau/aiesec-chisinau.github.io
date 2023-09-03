@@ -1,54 +1,52 @@
-.LatoMedium{
-  font-family: 'Lato-Medium', sans-serif;
+.LatoMedium {
+  font-family: "Lato-Medium", sans-serif;
 }
-#navbar_div{
+#navbar_div {
   display: flex;
   max-height: 3vw;
   padding: 1vw 0 1vw 0;
   font-size: 0.9vw;
 }
-#navbar_logo{
+#navbar_logo {
   max-width: 10vw;
   margin-left: 1vw;
 }
-#navbar_lang{
-
+#navbar_lang {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: row;
-
 }
-#navbar_options{
+#navbar_options {
   width: 73vw;
   display: flex;
 }
-.navbar_menu_option{
-cursor: pointer;
-  padding: 0 1vw 0 1vw ;
+.navbar_menu_option {
+  cursor: pointer;
+  padding: 0 1vw 0 1vw;
   display: flex;
   justify-content: center;
   align-items: center;
   justify-content: flex-start;
-  text-decoration:none;
+  text-decoration: none;
   color: #222222;
 }
-#navbar_search_icon{
-  border-right: solid 0.1vw #222222 ;
-  padding: 0 1vw 0 1vw ;
+#navbar_search_icon {
+  border-right: solid 0.1vw #222222;
+  padding: 0 1vw 0 1vw;
 }
-#navbar_login_icon{
-  border-right: solid 0.1vw #222222 ;
-  padding: 0 1vw 0 1vw ;
+#navbar_login_icon {
+  border-right: solid 0.1vw #222222;
+  padding: 0 1vw 0 1vw;
 }
-#navbar_langiage{
+#navbar_langiage {
   padding-left: 1vw;
   display: flex;
 }
-#navbar_downarrow{
+#navbar_downarrow {
   padding-left: 0.5vw;
 }
 
-.navbar_svg_icons{
+.navbar_svg_icons {
   width: 1vw;
 }

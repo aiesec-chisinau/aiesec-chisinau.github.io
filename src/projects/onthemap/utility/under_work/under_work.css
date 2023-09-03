@@ -1,15 +1,15 @@
-.OTM_underwork_page{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
-    font-family: 'Lato', sans-serif;
-    color: #222222;
-    height: 75vh;
+.OTM_underwork_page {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  font-family: "Lato", sans-serif;
+  color: #222222;
+  height: 75vh;
 }
-.OTM_underwork_center_text{
-    display: flex;
-    align-items: center;
-    font-size: 30px;
-    justify-content: center;
+.OTM_underwork_center_text {
+  display: flex;
+  align-items: center;
+  font-size: 30px;
+  justify-content: center;
 }

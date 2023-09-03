@@ -1,13 +1,13 @@
 {
-    "navbar": {
-      "home": "Acasa",
-      "about": "Despre noi",
-      "contact": "Contact",
-      "shop": "Magazin",
-      "projects":"Proiectele noastre",
-      "login": "Logare",
-      "language":"Limba"
-    },
+  "navbar": {
+    "home": "Acasa",
+    "about": "Despre noi",
+    "contact": "Contact",
+    "shop": "Magazin",
+    "projects": "Proiectele noastre",
+    "login": "Logare",
+    "language": "Limba"
+  },
   "projects": {
     "seemore": "vezi mai multe...",
     "aboutprojects": "Despre proiectele noastre",
@@ -18,24 +18,24 @@
     "home": "Ne scuzati, web-siteul este inca in proces de creare",
     "scroll_down": "Scroll Down"
   },
-    "login": {
-        "goback": "inapoi"
-    },
-    "about": {
-        "page_title":"AIESEC în Chisinau",
-        "who_are_we":"Cine suntem?",
-      "who_are_we_text1": "Suntem ",
-      "who_are_we_text2":"cea mai mare organizație de voluntariat din lume",
-      "who_are_we_text3":", cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.",
-      "who_are_we_text4":"Voluntarii noștri ",
-      "who_are_we_text5":"sunt tineri, studenți sau elevi, cu vârsta cuprinsă între ",
-      "who_are_we_text6":"18 și 30 ani.",
-      "who_are_we_text7":"Ei sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership.",
-      "our_volunteers":"Voluntarii noștri",
-      "our_volunteers_text1": "În fiecare an, în luna Septembrie și Februarie, orice tânăr poate deveni voluntar AIESEC în Chișinău.",
-      "our_volunteers_text2": "Te invităm să aplici și să ne cunoști AIESEC din interior, alături de voluntarii noștri."
-    },
-  "otm":{
+  "login": {
+    "goback": "inapoi"
+  },
+  "about": {
+    "page_title": "AIESEC în Chisinau",
+    "who_are_we": "Cine suntem?",
+    "who_are_we_text1": "Suntem ",
+    "who_are_we_text2": "cea mai mare organizație de voluntariat din lume",
+    "who_are_we_text3": ", cu sediu în  Moldova, Argentina, Japonia și încă 106+ țări în toată lumea.",
+    "who_are_we_text4": "Voluntarii noștri ",
+    "who_are_we_text5": "sunt tineri, studenți sau elevi, cu vârsta cuprinsă între ",
+    "who_are_we_text6": "18 și 30 ani.",
+    "who_are_we_text7": "Ei sunt cei care dau viață misiunii noastre prin organizarea proiectelor, conferințelor și ocupând poziții de leadership.",
+    "our_volunteers": "Voluntarii noștri",
+    "our_volunteers_text1": "În fiecare an, în luna Septembrie și Februarie, orice tânăr poate deveni voluntar AIESEC în Chișinău.",
+    "our_volunteers_text2": "Te invităm să aplici și să ne cunoști AIESEC din interior, alături de voluntarii noștri."
+  },
+  "otm": {
     "contact": "Contactați-ne",
     "signin": "Logare",
     "joinus": "Aplica",
@@ -50,9 +50,9 @@
     "see_more_info": "afla mai multe aici",
     "commigsoon": "în curând"
   },
-  "otm_apply":{
+  "otm_apply": {
     "period0": "On the Map 1",
-    "period0dates":"6 februarie - 18 martie",
+    "period0dates": "6 februarie - 18 martie",
     "period1": "OTM 2 perioada 1",
     "period1dates": "19 iunie -30 iulie",
     "period2": "OTM 2 perioada 2",
@@ -61,13 +61,12 @@
     "period3dates": "23 august - 2 octombrie"
   },
   "otm_more": {
-    "title":"Despre Proiect",
+    "title": "Despre Proiect",
     "q1": "Pe Scurt",
     "a1": "Proiect internațional bazat pe SDG-8, călătoriți, fiți sustenabil, învățați marketing și câștigați experiență de voluntariat într-unul dintre cele mai bune proiecte powered by AIESEC.",
     "q2": "Ce este ",
     "a2": "On The Map este un proiect marca AIESEC ce are scopul de a promova turismul sustenabil în Republica Moldova.",
     "a2_2": "Proiectul oferă participanților șansa de a călători, de a învăța ce este turismul sustenabil și de a obține cunoștințe în marketing, branding, fotografie."
-
   },
   "OTM_oferta": {
     "pdf_version": "versiunea pdf",
@@ -86,19 +85,19 @@
   },
 
   "otm_contact": {
-    "title":"Contact ",
+    "title": "Contact ",
     "ifcontact": "Dacă aveți întrebări suplimentare, nu ezitați să ne contactați",
     "iflocation": "Adresa noastră fizică:",
     "ifsocial": "Our social media:"
   },
   "apply": {
-    "lang":"RO",
-    "nolang":"EN",
+    "lang": "RO",
+    "nolang": "EN",
     "please_check1": "Vă rugăm să bifați căsuțele dacă:",
     "please_check2": "(nu va influența rezultatul)",
     "name": "Numele",
     "surname": "Prenumele",
-    "name_inside":  " Numele tău",
+    "name_inside": " Numele tău",
     "surname_inside": "Prenulele tău",
     "phone": "Telefon",
     "email": "E-mail",
@@ -107,8 +106,5 @@
     "check_option2": "I study at university",
     "check_option3": "I live in Chisinau",
     "check_option4": "I am working (have a job)"
-
   }
-
-
 }
