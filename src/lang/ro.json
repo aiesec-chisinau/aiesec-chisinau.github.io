@@ -94,8 +94,20 @@
   "apply": {
     "lang":"RO",
     "nolang":"EN",
-    "please_check1": "Plase check the boxes if you:",
-    "please_check2": "(will not influence the results)"
+    "please_check1": "Vă rugăm să bifați căsuțele dacă:",
+    "please_check2": "(nu va influența rezultatul)",
+    "name": "Numele",
+    "surname": "Prenumele",
+    "name_inside":  " Numele tău",
+    "surname_inside": "Prenulele tău",
+    "phone": "Telefon",
+    "email": "E-mail",
+    "SM_link": "Social media link",
+    "check_option1": "I speak English",
+    "check_option2": "I study at university",
+    "check_option3": "I live in Chisinau",
+    "check_option4": "I am working (have a job)"
+
   }
 
 

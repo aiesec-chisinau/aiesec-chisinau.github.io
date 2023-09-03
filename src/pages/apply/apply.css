@@ -75,3 +75,37 @@ color: #C5C2C2;}
 .apply_checkbox{
     margin:0px 5px 0 0;
 }
+.apply_form_group{
+
+}
+
+.apply_form_group{
+    border-radius: 5.939px;
+    border: 0.742px solid #D2D5DA;
+    background: #FFF;
+    box-shadow: 0px 1.484764575958252px 1.484764575958252px 0px rgba(0, 0, 0, 0.05);
+    margin:2px 0 2px 0
+}
+
+#apply_send_btn{
+    color: #FFF;
+    text-align: center;
+
+    font-family: Open Sans;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 28px; /* 200% */
+    background-color: #037EF3;
+    width: 90px;
+    border-radius: 30px;
+    border: 1px solid transparent;
+}
+
+#apply_form {
+    display: flex;
+    justify-content: space-between;
+    width: 90%;
+    margin: 5%;
+    flex-direction: column;
+}

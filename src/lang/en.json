@@ -86,6 +86,7 @@
   "apply": {
     "lang":"EN",
     "nolang":"RO",
-    "please_check": "Plase check the boxes if you: (will not influence the results)"
+    "please_check1": "Plase check the boxes if you:",
+    "please_check2": "(will not influence the results)"
   }
 }
