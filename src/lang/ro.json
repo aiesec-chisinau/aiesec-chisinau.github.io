@@ -16,7 +16,10 @@
   "home": {
     "lang": "ro",
     "home": "Ne scuzati, web-siteul este inca in proces de creare",
-    "scroll_down": "Scroll Down"
+    "scroll_down": "Scroll Down",
+    "goback": "inapoi",
+    "send": "Trimis cu succes",
+    "thx": "Vă mulțumim pentru interesul acordat pentru AIESEC din Chișinău ❤️"
   },
   "login": {
     "goback": "inapoi"
@@ -93,6 +96,7 @@
   "apply": {
     "lang": "RO",
     "nolang": "EN",
+    "apply_btn": "Aplica",
     "please_check1": "Vă rugăm să bifați căsuțele dacă:",
     "please_check2": "(nu va influența rezultatul)",
     "name": "Numele",
@@ -101,10 +105,20 @@
     "surname_inside": "Prenulele tău",
     "phone": "Telefon",
     "email": "E-mail",
+    "email_inside": "adresa_ta@gmail.com",
     "SM_link": "Social media link",
-    "check_option1": "I speak English",
-    "check_option2": "I study at university",
-    "check_option3": "I live in Chisinau",
-    "check_option4": "I am working (have a job)"
+    "check_option1": "Vorbesc English",
+    "check_option2": "Studiez university",
+    "check_option3": "Traiesc in Chisinau",
+    "check_option4": "Lucrez (am un job)",
+    "check_18": "Da, am deja 18 ani",
+    "check_agree": "Da, permit AIESEC din Chișinău să colecteze, să prelucreze și să utilizeze datele mele personale",
+    "post_send": "By completing and sending this form you agree with processing your personal data.",
+    "reserved": "Copyright © 2023, AIESEC in Chisinau. All rights reserved",
+    "adress": "str. Căpriana 50, ASEM, bl. C,oficiul 502 A, Chișinău, Moldova.",
+    "adress_maps": "get direction on maps",
+    "social_links": "Check out our social networks for more content:",
+    "get_link": "Cum să obțin linkul contului meu de social media?",
+    "here": "aici"
   }
 }

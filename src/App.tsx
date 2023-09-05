@@ -27,6 +27,7 @@ import Apply_demo from "./pages/demo/Apply_demo";
 
 //apply
 import Apply from "./pages/apply/Apply";
+import Thx from "./pages/thx/Thx";
 
 function App() {
   return (
@@ -39,6 +40,7 @@ function App() {
         <Route path="/login" element={<LoginPage />} />
         <Route path="/projects" element={<ProjectsPage />} />
         <Route path="/soon" element={<Soon />} />
+        <Route path="/thx" element={<Thx />} />
         // aplication
         <Route path="/apply" element={<Apply />} />
         <Route path="/apply/demo" element={<Apply_demo />} />

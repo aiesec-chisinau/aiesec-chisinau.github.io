@@ -16,7 +16,10 @@
   "home": {
     "lang": "en",
     "home": "Excuse us, the website is still under construction",
-    "scroll_down": "Scroll Down"
+    "scroll_down": "Scroll Down",
+    "goback": "go back",
+    "send": "Send successfully",
+    "thx": "Thank you for your interest for AIESEC in Chisinau ❤️"
   },
   "login": {
     "goback": "go back"
@@ -83,7 +86,29 @@
   "apply": {
     "lang": "EN",
     "nolang": "RO",
+    "apply_btn": "Apply",
     "please_check1": "Plase check the boxes if you:",
-    "please_check2": "(will not influence the results)"
+    "please_check2": "(will not influence the results)",
+    "name": "Name",
+    "surname": "Surname",
+    "name_inside": " Your name",
+    "surname_inside": "Your surname",
+    "phone": "Phone",
+    "email": "E-mail",
+    "email_inside": "your_email@gmail.com",
+    "SM_link": "Social media link",
+    "check_option1": "I speak English",
+    "check_option2": "I study at university",
+    "check_option3": "I live in Chisinau",
+    "check_option4": "I am working (have a job)",
+    "check_18": "Yes, I’m 18 or older",
+    "check_agree": "Yes, I allow AIESEC in Chisinau to collect, process and use my personal data.",
+    "post_send": "By completing and sending this form you agree with processing your personal data.",
+    "reserved": "Copyright © 2023, AIESEC in Chisinau. rights reserved",
+    "adress": "str. Căpriana 50, ASEM, bl. C,oficiul 502 A, Chișinău, Moldova.",
+    "adress_maps": "get direction on maps",
+    "social_links": "Check out our social networks for more content:",
+    "get_link": "How to get my social media account link?",
+    "here": "here"
   }
 }
