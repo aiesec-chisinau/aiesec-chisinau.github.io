@@ -113,12 +113,14 @@
     "check_option4": "Lucrez (am un job)",
     "check_18": "Da, am deja 18 ani",
     "check_agree": "Da, permit AIESEC din Chișinău să colecteze, să prelucreze și să utilizeze datele mele personale",
-    "post_send": "By completing and sending this form you agree with processing your personal data.",
+    "post_send": "Prin completarea și trimiterea acestui formular sunteți de acord cu prelucrarea datelor dumneavoastră personale.",
     "reserved": "Copyright © 2023, AIESEC in Chisinau. All rights reserved",
     "adress": "str. Căpriana 50, ASEM, bl. C,oficiul 502 A, Chișinău, Moldova.",
-    "adress_maps": "get direction on maps",
-    "social_links": "Check out our social networks for more content:",
+    "adress_maps": "obțineți direcția pe maps",
+    "social_links": "Consultați rețelele noastre sociale pentru mai mult conținut:",
     "get_link": "Cum să obțin linkul contului meu de social media?",
-    "here": "aici"
+    "here": "aici",
+    "what": "Ce este AIESEC?",
+    "why": "De ce ar trebui sa aplic?"
   }
 }

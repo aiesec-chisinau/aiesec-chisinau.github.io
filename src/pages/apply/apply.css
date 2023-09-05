@@ -184,6 +184,9 @@
 .hidendiv {
   display: none;
 }
+.apply_questions{
+  margin-bottom: 1px;
+}
 
 @media screen and (max-width: 400px) {
   #apply_page_inside {
