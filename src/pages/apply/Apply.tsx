@@ -18,10 +18,7 @@ const Apply: React.FC = () => {
     "entry.1180443142": "",
     "entry.912432820": "",
     "entry.261290477": "",
-    "entry.1833168821": ""
-
-
-
+    "entry.1833168821": "",
   });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -32,25 +29,21 @@ const Apply: React.FC = () => {
     }));
   };
 
-  const handleCheckChange1 = (ss:string, rr:string, ll:string) => {
-    const is18Checked = (
-        document.getElementById(ll) as HTMLInputElement
-    )?.checked;
-    if(is18Checked) {
-
+  const handleCheckChange1 = (ss: string, rr: string, ll: string) => {
+    const isInputChecked = (document.getElementById(ll) as HTMLInputElement)
+      ?.checked;
+    if (isInputChecked) {
       setFormData((prevData) => ({
         ...prevData,
         [ss]: rr,
       }));
-    }
-    else{
+    } else {
       setFormData((prevData) => ({
         ...prevData,
-        [ss]: '',
+        [ss]: "",
       }));
     }
   };
-
 
   const isAllRequiredInputsFilled = () => {
     // Check if all required input fields have values
@@ -139,20 +132,67 @@ const Apply: React.FC = () => {
           </div>
           <div className="apply_check_div">
             {" "}
-            <input id='apply_check1' type="checkbox" name="entry.1180443142" className="apply_checkbox" onChange={e=>handleCheckChange1("entry.1180443142","I speak English","apply_check1")} />
-
+            <input
+              id="apply_check1"
+              type="checkbox"
+              name="entry.1180443142"
+              className="apply_checkbox"
+              onChange={(e) =>
+                handleCheckChange1(
+                  "entry.1180443142",
+                  "I speak English",
+                  "apply_check1",
+                )
+              }
+            />
             <span id="apply_check_option1">{t("apply.check_option1")}</span>
           </div>
           <div className="apply_check_div">
-            <input id='apply_check2' type="checkbox" name="entry.912432820" className="apply_checkbox" onChange={e=>handleCheckChange1("entry.912432820","I study at university","apply_check2")} />
+            <input
+              id="apply_check2"
+              type="checkbox"
+              name="entry.912432820"
+              className="apply_checkbox"
+              onChange={(e) =>
+                handleCheckChange1(
+                  "entry.912432820",
+                  "I study at university",
+                  "apply_check2",
+                )
+              }
+            />
             <span id="apply_check_option2">{t("apply.check_option2")}</span>
           </div>
           <div className="apply_check_div">
-            <input id='apply_check3' type="checkbox" name="entry.912432820" className="apply_checkbox" onChange={e=>handleCheckChange1("entry.261290477","I live in Chisinau","apply_check3")} />
+            <input
+              id="apply_check3"
+              type="checkbox"
+              name="entry.912432820"
+              className="apply_checkbox"
+              onChange={(e) =>
+                handleCheckChange1(
+                  "entry.261290477",
+                  "I live in Chisinau",
+                  "apply_check3",
+                )
+              }
+            />
             <span>{t("apply.check_option3")}</span>
           </div>
           <div className="apply_check_div">
-            <input id='apply_check4' type="checkbox" name="entry.912432820" className="apply_checkbox" onChange={e=>handleCheckChange1("entry.1833168821","I am working (have a job)","apply_check4")} />
+            <input
+              id="apply_check4"
+              type="checkbox"
+              name="entry.912432820"
+              className="apply_checkbox"
+              onChange={(e) =>
+                handleCheckChange1(
+                  "entry.1833168821",
+                  "I am working (have a job)",
+                  "apply_check4",
+                )
+              }
+            />
             <span>{t("apply.check_option4")}</span>
           </div>
         </div>
@@ -259,8 +299,6 @@ const Apply: React.FC = () => {
               </div>
             </div>
 
-
-
             <input type="hidden" name="fvv" value="1" />
             <input type="hidden" name="fbzx" value="2297128510304169969" />
             <input type="hidden" name="pageHistory" value="0" />
@@ -293,34 +331,31 @@ const Apply: React.FC = () => {
 
           <div id="apply_post_txt">{t("apply.post_send")}</div>
 
-          <div className='apply_questions'>
+          <div className="apply_questions">
             <div className="apply_qandq">
               {t("apply.get_link")}{" "}
               <Link
-                  to="https://www.google.com/search?q=how+to+get+my+social+media+link&oq=ho+go+get+my+social+media&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIKCAMQABiGAxiKBTIKCAQQABiGAxiKBTIKCAUQABiGAxiKBTIKCAYQABiGAxiKBdIBCTEyMjY1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
-                  className="apply_blue_txt"
+                to="https://www.google.com/search?q=how+to+get+my+social+media+link&oq=ho+go+get+my+social+media&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIKCAMQABiGAxiKBTIKCAQQABiGAxiKBTIKCAUQABiGAxiKBTIKCAYQABiGAxiKBdIBCTEyMjY1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
             </div>
           </div>
-          <div className='apply_questions'>
+          <div className="apply_questions">
             <div className="apply_qandq">
               {t("apply.what")}{" "}
-              <Link
-                  to="https://aiesec.org/about-us"
-                  className="apply_blue_txt"
-              >
+              <Link to="https://aiesec.org/about-us" className="apply_blue_txt">
                 {t("apply.here")}
               </Link>
             </div>
           </div>
-          <div className='apply_questions'>
+          <div className="apply_questions">
             <div className="apply_qandq">
               {t("apply.why")}{" "}
               <Link
-                  to="https://aiesec.org/membership"
-                  className="apply_blue_txt"
+                to="https://aiesec.org/membership"
+                className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
