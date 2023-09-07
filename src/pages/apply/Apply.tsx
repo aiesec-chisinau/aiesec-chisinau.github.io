@@ -354,13 +354,14 @@ const Apply: React.FC = () => {
             <div className="apply_qandq">
               {t("apply.why")}{" "}
               <Link
-                to="https://aiesec.org/membership"
-                className="apply_blue_txt"
+                  to="https://aiesec.org/membership"
+                  className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
             </div>
           </div>
+
 
           <div>
             <hr />
