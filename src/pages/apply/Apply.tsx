@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
 import "./apply.css";
@@ -137,7 +137,7 @@ const Apply: React.FC = () => {
               type="checkbox"
               name="entry.1180443142"
               className="apply_checkbox"
-              onChange={(e) =>
+              onChange={() =>
                 handleCheckChange1(
                   "entry.1180443142",
                   "I speak English",
@@ -153,7 +153,7 @@ const Apply: React.FC = () => {
               type="checkbox"
               name="entry.912432820"
               className="apply_checkbox"
-              onChange={(e) =>
+              onChange={() =>
                 handleCheckChange1(
                   "entry.912432820",
                   "I study at university",
@@ -169,7 +169,7 @@ const Apply: React.FC = () => {
               type="checkbox"
               name="entry.912432820"
               className="apply_checkbox"
-              onChange={(e) =>
+              onChange={() =>
                 handleCheckChange1(
                   "entry.261290477",
                   "I live in Chisinau",
@@ -185,7 +185,7 @@ const Apply: React.FC = () => {
               type="checkbox"
               name="entry.912432820"
               className="apply_checkbox"
-              onChange={(e) =>
+              onChange={() =>
                 handleCheckChange1(
                   "entry.1833168821",
                   "I am working (have a job)",
@@ -354,14 +354,13 @@ const Apply: React.FC = () => {
             <div className="apply_qandq">
               {t("apply.why")}{" "}
               <Link
-                  to="https://aiesec.org/membership"
-                  className="apply_blue_txt"
+                to="https://aiesec.org/membership"
+                className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
             </div>
           </div>
-
 
           <div>
             <hr />

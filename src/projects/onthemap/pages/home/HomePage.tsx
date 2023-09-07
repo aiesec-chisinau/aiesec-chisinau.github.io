@@ -59,7 +59,7 @@ const OTMhomePage: React.FC = () => {
         <img
           src="/images/onthemap/logo_gif_black_trasnparent_bg_onetime_loop.gif"
           style={{ height: "150px", width: "150px" }}
-          alt=''
+          alt=""
         />
       </div>
 
@@ -70,7 +70,11 @@ const OTMhomePage: React.FC = () => {
           <div id="otm-home-join_div">
             <div id="otm-home-join_div_center">
               <a href="https://www.instagram.com/aiesec.onthemap">
-                <img id="otm_site__img" src="/images/onthemap/main.png" alt='On the map' />
+                <img
+                  id="otm_site__img"
+                  src="/images/onthemap/main.png"
+                  alt="On the map"
+                />
               </a>
               <div id="otm_home-joinus">
                 <div id="otm_home_line_buttons">
@@ -125,7 +129,11 @@ const OTMhomePage: React.FC = () => {
           >
             <div id="OTM_seeinsta_logo">
               {" "}
-              <img src="/images/media/instagram_logo.png" width="40%"  alt='Instagram'/>
+              <img
+                src="/images/media/instagram_logo.png"
+                width="40%"
+                alt="Instagram"
+              />
             </div>
             <div id="OTM_seeinsta_text">
               <span>
@@ -152,32 +160,32 @@ const OTMhomePage: React.FC = () => {
             <img
               src="/images/onthemap/events/IMG_8542.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege1'
+              alt="OnTheMap imege1"
             />
             <img
               src="/images/onthemap/events/IMG_8812.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege2'
+              alt="OnTheMap imege2"
             />
             <img
               src="/images/onthemap/events/IMG_9161.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege3'
+              alt="OnTheMap imege3"
             />
             <img
               src="/images/onthemap/events/IMG_7037.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege4'
+              alt="OnTheMap imege4"
             />
             <img
               src="/images/onthemap/events/IMG_8831.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege4'
+              alt="OnTheMap imege4"
             />
             <img
               src="/images/onthemap/events/IMG_9082.JPG"
               className="OTM_home_photos"
-              alt='OnTheMap imege5'
+              alt="OnTheMap imege5"
             />
           </div>
           <div
