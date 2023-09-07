@@ -1,25 +1,24 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
-import axios from "axios";
-import { Container, Form, Button, Alert } from "react-bootstrap";
+
 import "./home.css";
 import { useTranslation } from "react-i18next";
 import Footer from "../../components/footer/Footer";
 import Header from "../../components/header/Header";
 import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
 const OTMhomePage: React.FC = () => {
-  const { t, i18n } = useTranslation("home");
+  const { t } = useTranslation("home");
 
   const toinsta = () => {
     window.location.href = "https://www.instagram.com/aiesec.onthemap";
   };
-  const [title, setTitle] = useState("On the Map");
+  const [title] = useState("On the Map");
   //'/images/onthemap/logo_black.png'
   useEffect(() => {
     // This will run when the page first loads and whenever the title changes
     document.title = title;
 
-    if (localStorage.getItem("one_time_gif_home_page_OTM") == "true") {
+    if (localStorage.getItem("one_time_gif_home_page_OTM") === "true") {
       const element1 = document.getElementById("OTM_onetiome_gif");
       if (element1) {
         element1.classList.remove("show");
@@ -33,7 +32,7 @@ const OTMhomePage: React.FC = () => {
     }
 
     const timer = setTimeout(() => {
-      if (localStorage.getItem("one_time_gif_home_page_OTM") != "true") {
+      if (localStorage.getItem("one_time_gif_home_page_OTM") !== "true") {
         localStorage.setItem("one_time_gif_home_page_OTM", "true");
         const element1 = document.getElementById("OTM_onetiome_gif");
         if (element1) {
@@ -60,6 +59,7 @@ const OTMhomePage: React.FC = () => {
         <img
           src="/images/onthemap/logo_gif_black_trasnparent_bg_onetime_loop.gif"
           style={{ height: "150px", width: "150px" }}
+          alt=''
         />
       </div>
 
@@ -70,7 +70,7 @@ const OTMhomePage: React.FC = () => {
           <div id="otm-home-join_div">
             <div id="otm-home-join_div_center">
               <a href="https://www.instagram.com/aiesec.onthemap">
-                <img id="otm_site__img" src="/images/onthemap/main.png" />
+                <img id="otm_site__img" src="/images/onthemap/main.png" alt='On the map' />
               </a>
               <div id="otm_home-joinus">
                 <div id="otm_home_line_buttons">
@@ -125,7 +125,7 @@ const OTMhomePage: React.FC = () => {
           >
             <div id="OTM_seeinsta_logo">
               {" "}
-              <img src="/images/media/instagram_logo.png" width="40%" />
+              <img src="/images/media/instagram_logo.png" width="40%"  alt='Instagram'/>
             </div>
             <div id="OTM_seeinsta_text">
               <span>
@@ -152,26 +152,32 @@ const OTMhomePage: React.FC = () => {
             <img
               src="/images/onthemap/events/IMG_8542.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege1'
             />
             <img
               src="/images/onthemap/events/IMG_8812.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege2'
             />
             <img
               src="/images/onthemap/events/IMG_9161.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege3'
             />
             <img
               src="/images/onthemap/events/IMG_7037.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege4'
             />
             <img
               src="/images/onthemap/events/IMG_8831.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege4'
             />
             <img
               src="/images/onthemap/events/IMG_9082.JPG"
               className="OTM_home_photos"
+              alt='OnTheMap imege5'
             />
           </div>
           <div

@@ -1,7 +1,5 @@
 import React, { useEffect, useState } from "react";
-import { Link } from "react-router-dom";
-import axios from "axios";
-import { Container, Form, Button, Alert } from "react-bootstrap";
+
 import "./more.css";
 import { useTranslation } from "react-i18next";
 import Footer from "../../components/footer/Footer";
