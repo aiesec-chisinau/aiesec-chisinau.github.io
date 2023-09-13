@@ -1,103 +1,65 @@
-import * as React from "react";
-import "./navbar.css";
-import i18n from "../../i18n";
-import { useTranslation } from "react-i18next";
-import { useEffect } from "react";
-import { Link } from "react-router-dom";
+import React, { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import './navbar.css';
+import { useTranslation } from 'react-i18next';
 
-let lang_option = "";
-function set_lang() {
-  //lang_option= languges_selection.slice(languges_selection.indexOf(lang_seleced)+1).join(' ');
-  //console.log(lang_option)
-}
+const navLinks = [
+  { title: "navbar.projects", path: '/projects' },
+  { title: "navbar.shop", path: '/shop' },
+  { title: "navbar.about", path: '/about' },
+  { title: "navbar.contact", path: '/contact' }
+];
 
-function Navbar() {
-  let lang_seleced: string = JSON.stringify(localStorage.getItem("i18nextLng"))
-    .split('"')
-    .join("");
-  let lang_option = "";
+function TopNav() {
 
+  const location = useLocation();
   const { t, i18n } = useTranslation("home");
+  const [isResponsive, setIsResponsive] = useState(false);
 
-  //i18n.changeLanguage("ro"); //change the language
-
-  useEffect(() => {
-    const storedLanguage = localStorage.getItem("language");
-    if (storedLanguage) {
-      i18n.changeLanguage(storedLanguage);
-    }
-  }, [i18n]);
-
-  const handleChange = (event: { target: { value: any } }) => {
-    const language = event.target.value;
-    i18n.changeLanguage(language);
-    localStorage.setItem("language", language);
+  const toggleNav = () => {
+    setIsResponsive(!isResponsive);
   };
 
-  useEffect(() => {
-    if (localStorage.getItem("login") == "logged") {
-      console.log("logged");
+  const onClickLanguageChange = () => {
+    const storedLanguage = localStorage.getItem("i18nextLng");
+    if (storedLanguage === "ro") {
+      i18n.changeLanguage("en");
     } else {
-      console.log("not-logged");
+      i18n.changeLanguage("ro");
     }
-  }, []);
-  const pages = [
-    t("navbar.projects"),
-    t("navbar.shop"),
-    t("navbar.about"),
-    t("navbar.contact"),
-  ];
+  };
 
   return (
-    <div id="navbar_div">
-      <div id="navbar_logo">
-        {" "}
-        <img style={{ width: "100%" }} src="/images/logo.png" />
-      </div>
-      <div id="navbar_options" className="LatoMedium">
-        <Link
-          to="/projects"
-          className="navbar_menu_option"
-          id="bavbar_nmenu_projects"
-        >
-          {t("navbar.projects")}
-        </Link>
-        <Link to="/soon" className="navbar_menu_option" id="bavbar_nmenu_shop">
-          {t("navbar.shop")}
-        </Link>
-        <Link
-          to="/about"
-          className="navbar_menu_option"
-          id="bavbar_nmenu_about"
-        >
-          {t("navbar.about")}
-        </Link>
-        <Link
-          to="/soon"
-          className="navbar_menu_option"
-          id="bavbar_nmenu_contact"
-        >
-          {t("navbar.contact")}
-        </Link>
-      </div>
+      <div>
+        <div className={isResponsive ? "topnav responsive" : "topnav"} id="myTopnav">
 
-      <div id="navbar_lang" className="LatoMedium">
-        <div id="navbar_search_icon">
-          <img className="navbar_svg_icons" src="/images/svg/search.svg" />
+          <Link  to='/' className='topnav a'>
+           <img className='navbar_icon_img' src="/images/logo.png" alt=''/>
+          </Link>
+          {navLinks.map(link => (
+              <Link key={link.title} to={link.path}   style={{ color: location.pathname === "contact" ? '#ffffff' : '#222222' }}>
+                {t(link.title)}
+              </Link>
+
+          ))}
+          <div className='navbar_right'>
+          <div  id="navbar_login_icon" ><img className='navbar_icon_img' alt=''
+                                                                src="/images/svg/login.svg"/></div>
+          <div  onClick={onClickLanguageChange}>
+            <span id="apply_lang_bold">{t("apply.lang")}</span> |{" "}
+            <span id="apply_lang_thin">{t("apply.nolang")}</span>
+          </div>
+            <a href="javascript:void(0);" className="icon" onClick={toggleNav}>
+              <svg xmlns="http://www.w3.org/2000/svg" className='navbar_icon_img' viewBox="0 0 18 12" fill="none">
+                <path d="M17 5H1C0.4 5 0 5.4 0 6C0 6.6 0.4 7 1 7H17C17.6 7 18 6.6 18 6C18 5.4 17.6 5 17 5ZM1 2H17C17.6 2 18 1.6 18 1C18 0.4 17.6 0 17 0H1C0.4 0 0 0.4 0 1C0 1.6 0.4 2 1 2ZM17 10H1C0.4 10 0 10.4 0 11C0 11.6 0.4 12 1 12H17C17.6 12 18 11.6 18 11C18 10.4 17.6 10 17 10Z" fill="black"/>
+              </svg>
+            </a>
+          </div>
+
         </div>
-        <div id="navbar_login_icon">
-          <img className="navbar_svg_icons" src="/images/svg/login.svg" />
-        </div>
-        <div id="navbar_langiage">
-          {t("navbar.language")}
-          <img
-            id="navbar_downarrow"
-            className="navbar_svg_icons"
-            src="/images/svg/down_arrow_v2.svg"
-          />
-        </div>
+
       </div>
-    </div>
   );
 }
-export default Navbar;
+
+export default TopNav;
