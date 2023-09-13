@@ -1,27 +1,21 @@
 import React, { useState } from "react";
 import { useTranslation } from "react-i18next";
 
-import "./apply.css";
+import "./birthday.css";
 import { Link } from "react-router-dom";
 import ReactDOM from "react-dom/client";
+import {text} from "stream/consumers";
 
-const Apply: React.FC = () => {
-  const [isFormCompleted, setIsFormCompleted] = useState(false);
+const Birthday: React.FC = () => {
+
   const { t, i18n } = useTranslation("home");
 
   const [formData, setFormData] = useState({
-    "entry.1926189810": "",
-    "entry.274219221": "",
-    "entry.1785974725": "",
-    "entry.1996221300": "",
-    "entry.2145100513": "",
-    "entry.1180443142": "",
-    "entry.912432820": "",
-    "entry.261290477": "",
-    "entry.1833168821": "",
-    "entry.756624322": "",
-    "entry.1986187435": "",
-    "entry.916203011":""
+    "entry.1959765168": "",
+    "entry.115540770": "",
+    "entry.1381443748": "",
+    "entry.1598958361": "",
+
   });
 
   const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
@@ -48,16 +42,7 @@ const Apply: React.FC = () => {
     }
   };
 
-  const isAllRequiredInputsFilled = () => {
-    // Check if all required input fields have values
-    return (
-      formData["entry.1926189810"].trim() !== "" &&
-      formData["entry.274219221"].trim() !== "" &&
-      formData["entry.1785974725"].trim() !== "" &&
-      formData["entry.1996221300"].trim() !== "" &&
-      formData["entry.2145100513"].trim() !== ""
-    );
-  };
+
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -70,10 +55,10 @@ const Apply: React.FC = () => {
       document.getElementById("apply_agree") as HTMLInputElement
     )?.checked;
 
-    if (is18Checked && isAgreeChecked) {
-      setIsFormCompleted(true); // Set the form completion state to true
+
+
       const googleFormsURL =
-        "https://docs.google.com/forms/d/e/1FAIpQLSenrj9CGQGfsPZ4gvKyRLPVtS1jbeuTG0myxtxWvdz-Txfw3Q/formResponse";
+        "https://docs.google.com/forms/d/e/1FAIpQLSddFA4Qx9vU6NOFH9c_-YZIWSsehFMvAmTClG5M2xvMBm6Axw/formResponse";
 
       const formDataEntries = Object.entries(formData);
       const formDataSerialized = formDataEntries
@@ -98,9 +83,7 @@ const Apply: React.FC = () => {
           console.error("Error submitting the form:", error);
         });
       window.location.href = "/#/thx";
-    } else {
-      alert("Please check both 'I am 18 or older' and 'I agree' checkboxes.");
-    }
+
   };
 
   const onClickLanguageChange = () => {
@@ -125,240 +108,127 @@ const Apply: React.FC = () => {
 
         <div id="apply_div2">
           {" "}
-          <img id="apply_block2_img1" src="/images/apply/block2_img1.png" />
+          <img id="apply_block2_img1" src="/images/home/15yearsBithday.png" />
         </div>
         <div id="apply_div3">
           {" "}
           <div id="apply_div3_title">
-            {t("apply.please_check1")}{" "}
-            <span id="apply_div3_title_gray">{t("apply.please_check2")}</span>
+            {t("birthday.about")}{" "}
+            <span className="apply_div3_title_gray">:</span>
+            <br/><br/>
+            &nbsp;&nbsp;&nbsp;<span className="apply_div3_title_gray">
+               Hey, AIESEC 👋
+            </span><br/><br/>
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_gray">
+               {t("birthday.what_is1")}
+            </span><br/>
+
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_gray">
+               {t("birthday.what_is2")}
+            </span><br/><br/>
+            <span className="apply_div3_title_gray">
+               {t("birthday.what_is3")}
+            </span>
+            <br/><br/>
+
+            <div>
+              <hr  style={{border:"0.5px solid lightgray"}}/>
+            </div>
+            <br/><br/>
+            <div className="apply_div3_title" style={{textAlign:"center", fontSize:'13px', fontWeight:"600"}}>
+              {t("birthday.invitation")}
+            </div>
           </div>
+          <div id="apply_div3_title">
+            {t("birthday.come")}{" "}
+            <span className="apply_div3_title_gray">:</span>
+
+          </div>
+
           <div className="apply_check_div">
             {" "}
             <input
-              id="apply_check1"
-              type="checkbox"
-              name="entry.1180443142"
-              className="apply_checkbox"
-              onChange={() =>
-                handleCheckChange1(
-                  "entry.1180443142",
-                  "I speak English",
-                  "apply_check1",
-                )
-              }
+                id="apply_check1"
+                type="checkbox"
+                name="entry.409970161"
+                className="apply_checkbox"
+                onChange={() =>
+                    handleCheckChange1(
+                        "entry.409970161",
+                        "+",
+                        "apply_check1",
+                    )
+                }
             />
-            <span id="apply_check_option1">{t("apply.check_option1")}</span>
+            <span id="apply_check_option1">{t("birthday.informal")}</span>
           </div>
           <div className="apply_check_div">
             <input
               id="apply_check2"
               type="checkbox"
-              name="entry.912432820"
+              name="entry.1381443748"
               className="apply_checkbox"
               onChange={() =>
                 handleCheckChange1(
-                  "entry.912432820",
-                  "I study at university",
+                  "entry.1381443748",
+                  "+",
                   "apply_check2",
                 )
               }
             />
-            <span id="apply_check_option2">{t("apply.check_option2")}</span>
+            <span id="apply_check_option2">{t("birthday.offical")}</span>
           </div>
           <div className="apply_check_div">
+            {" "}
             <input
-              id="apply_check3"
-              type="checkbox"
-              name="entry.912432820"
-              className="apply_checkbox"
-              onChange={() =>
-                handleCheckChange1(
-                  "entry.261290477",
-                  "I live in Chisinau",
-                  "apply_check3",
-                )
-              }
+                id="apply_check0"
+                type="checkbox"
+                name="entry.115540770"
+                className="apply_checkbox"
+                onChange={() =>
+                    handleCheckChange1(
+                        "entry.115540770",
+                        "+",
+                        "apply_check1",
+                    )
+                }
             />
-            <span>{t("apply.check_option3")}</span>
+            <span id="apply_check_option1">{t("birthday.want_to_help")}</span>
           </div>
-          <div className="apply_check_div">
-            <input
-              id="apply_check4"
-              type="checkbox"
-              name="entry.912432820"
-              className="apply_checkbox"
-              onChange={() =>
-                handleCheckChange1(
-                  "entry.1833168821",
-                  "I am working (have a job)",
-                  "apply_check4",
-                )
-              }
-            />
-            <span>{t("apply.check_option4")}</span>
-          </div>
+
         </div>
 
         <div id="apply_div4">
           <form id="apply_form" onSubmit={handleSubmit} method="POST">
-            <div id="apply_name_div">
-              <div id="apply_name_div_side1">
-                <input
-                  required={true}
-                  id="1926189810"
-                  type="text"
-                  name="entry.1926189810"
-                  className="apply_form_group apply_form_group_sp"
-                  value={formData["entry.1926189810"]}
-                  onChange={handleInputChange}
-                  placeholder={t<string>("apply.name_inside")}
-                />
-                <div className="apply_form_input_name">
-                  <span className="apply_form_label">
-                    {" "}
-                    &nbsp;&nbsp; {t("apply.name")}&nbsp;
-                    <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                  </span>
-                </div>
-              </div>
-              <div id="apply_name_div_side2">
-                <input
-                  required={true}
-                  className="apply_form_group apply_form_group_sp"
-                  id="274219221"
-                  type="text"
-                  name="entry.274219221"
-                  value={formData["entry.274219221"]}
-                  onChange={handleInputChange}
-                  placeholder={t<string>("apply.surname_inside")}
-                />
-                <div className="apply_form_input_name">
-                  <span className="apply_form_label">
-                    {" "}
-                    &nbsp;&nbsp; {t("apply.surname")}&nbsp;
-                    <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                  </span>
-                </div>
-              </div>
-            </div>
-            <div className="apply_input_div_row">
-              <input
-                required={true}
-                className="apply_form_group"
-                id="1785974725"
-                maxLength={9}
-                name="entry.1785974725"
-                pattern="[0]{1,1}[2,6,7]{1,1}[0-9]{7,7}"
-                value={formData["entry.1785974725"]}
-                onChange={handleInputChange}
-                placeholder=" 0********"
-              />
-              <div className="apply_form_input_name2">
-                <span className="apply_form_label">
-                  {" "}
-                  &nbsp;&nbsp; {t("apply.phone")}&nbsp;
-                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                </span>
-              </div>
-            </div>
-            <div className="apply_input_div_row">
-              <input
-                required={true}
-                className="apply_form_group"
-                id="1996221300"
-                type="email"
-                name="entry.1996221300"
-                pattern="[a-zA-Z0-9]+[a-z0-9._%+-]+[a-zA-Z0-9]+@[a-z0-9.-]+\.[a-z]{2,4}$"
-                value={formData["entry.1996221300"]}
-                onChange={handleInputChange}
-                placeholder={t<string>("apply.email_inside")}
-              />
-              <div className="apply_form_input_name2">
-                <span className="apply_form_label">
-                  {" "}
-                  &nbsp;&nbsp; {t("apply.email")}&nbsp;
-                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                </span>
-              </div>
-            </div>
-            <div className="apply_input_div_row">
-              <input
-                  required={true}
-                  className="apply_form_group"
-                  id="2145100513"
-                  type="text"
-                  name="entry.2145100513"
-                  value={formData["entry.2145100513"]}
-                  onChange={handleInputChange}
-                  placeholder="ex: https://www.facebook.com/ ------------"
-              />
-              <div className="apply_form_input_name2">
-                <span className="apply_form_label">
-                  {" "}
-                  &nbsp;&nbsp; {t("apply.SM_link")}&nbsp;
-                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                </span>
-              </div>
-            </div>
-            <div className="apply_input_div_row">
-              <input
-                  required={true}
-                  className="apply_form_group"
-                  id="756624322"
-                  type="text"
-                  name="entry.756624322"
-                  value={formData["entry.756624322"]}
-                  onChange={handleInputChange}
-                  placeholder=" ex: UTM / USM / ASEM "
-              />
-              <div className="apply_form_input_name2">
-                <span className="apply_form_label">
-                  {" "}
-                  &nbsp;&nbsp; {t("apply.uni")}&nbsp;
-                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                </span>
-              </div>
-            </div>
-            <div className="apply_input_div_row">
-              <input
-                  required={true}
-                  className="apply_form_group"
-                  id="916203011"
-                  type="text"
-                  name="entry.916203011"
-                  value={formData["entry.916203011"]}
-                  onChange={handleInputChange}
-                  placeholder={t<string>("apply.why_apply_inside")}
-              />
-              <div className="apply_form_input_name2">
-                <span className="apply_form_label">
-                  {" "}
-                  &nbsp;&nbsp; {t("apply.why_apply")}&nbsp;
-                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
-                </span>
-              </div>
-            </div>
 
+            <div className="apply_input_div_row">
+              <input
+                required={true}
+                className="apply_form_group"
+                id="1959765168"
+
+                name="entry.1959765168"
+                value={formData["entry.1959765168"]}
+                onChange={handleInputChange}
+                placeholder="---------- ---------"
+              />
+              <div className="apply_form_input_name2">
+                <span className="apply_form_label">
+                  {" "}
+                  &nbsp;&nbsp; {t("birthday.namesurname")}&nbsp;
+                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
+                </span>
+              </div>
+            </div>
 
 
             <input type="hidden" name="fvv" value="1" />
-            <input type="hidden" name="fbzx" value="2297128510304169969" />
+            <input type="hidden" name="fbzx" value="-7927717424726547255" />
             <input type="hidden" name="pageHistory" value="0" />
 
-            <div className="apply_check_div_2">
-              <input type="checkbox" className="apply_checkbox" id="apply_18" />
-              <span>{t("apply.check_18")}</span>
-            </div>
 
-            <div className="apply_check_div_2">
-              <input
-                type="checkbox"
-                className="apply_checkbox"
-                id="apply_agree"
-              />
-              <span>{t("apply.check_agree")}</span>
-            </div>
 
             <div> &nbsp;</div>
 
@@ -367,7 +237,7 @@ const Apply: React.FC = () => {
                 id="apply_send_btn"
                 className="btn btn-primary"
                 type="submit"
-                value={t<string>("apply.apply_btn")}
+                value={t<string>("birthday.apply_btn")}
               />
             </div>
           </form>
@@ -376,34 +246,16 @@ const Apply: React.FC = () => {
 
           <div className="apply_questions">
             <div className="apply_qandq">
-              {t("apply.get_link")}{" "}
+              {t("birthday.more_about_aiesec")}{" "}
               <Link
-                to="https://www.google.com/search?q=how+to+get+my+social+media+link&oq=ho+go+get+my+social+media&gs_lcrp=EgZjaHJvbWUqCQgBEAAYDRiABDIGCAAQRRg5MgkIARAAGA0YgAQyCQgCEAAYDRiABDIKCAMQABiGAxiKBTIKCAQQABiGAxiKBTIKCAUQABiGAxiKBTIKCAYQABiGAxiKBdIBCTEyMjY1ajBqN6gCALACAA&sourceid=chrome&ie=UTF-8"
+                to="https://wiki.aiesec.md/"
                 className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
             </div>
           </div>
-          <div className="apply_questions">
-            <div className="apply_qandq">
-              {t("apply.what")}{" "}
-              <Link to="https://aiesec.org/about-us" className="apply_blue_txt">
-                {t("apply.here")}
-              </Link>
-            </div>
-          </div>
-          <div className="apply_questions">
-            <div className="apply_qandq">
-              {t("apply.why")}{" "}
-              <Link
-                to="https://aiesec.org/membership"
-                className="apply_blue_txt"
-              >
-                {t("apply.here")}
-              </Link>
-            </div>
-          </div>
+
 
           <div>
             <hr />
@@ -518,4 +370,4 @@ const Apply: React.FC = () => {
   );
 };
 
-export default Apply;
+export default Birthday;

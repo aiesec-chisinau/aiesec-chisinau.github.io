@@ -111,6 +111,28 @@
     "get_link": "How to get my social media account link?",
     "here": "here",
     "what": "What is AIESEC?",
-    "why": "Why should I apply?"
+    "why": "Why should I apply?",
+    "uni": "University/School",
+    "why_apply": "Why AIESEC?",
+    "why_apply_inside": "Why do you wish to learn from joining AIESEC?",
+    "what_choices": "What do you wish to learn from your choices?",
+    "what_choice": "What do you wish to learn?",
+    "how_sm": "How did you get to know about this membership recruitment?"
+  },
+  "birthday": {
+    "namesurname": "Nume Prenume",
+    "about": "About @Birthday",
+    "invitation": "You are invited 🎉",
+    "come": "Where do you come?",
+    "informal": "Informal part",
+    "offical": "Official part",
+    "want_to_help": "I want to help",
+    "apply_btn": "Send",
+    "what_is1": "Suntem bucuroși să vă invităm în cadrul aniversării de 15 ani a AIESEC în Chișinău.",
+    "what_is2": "Mai jos atașată este invitația cu toate detaliile organizatorice. Vă așteptăm cu mare drag!",
+    "what_is3": "P.S. Completând formularul de mai jos, confirmați prezența în cadrul evenimentului!",
+    "pret_text": "Price",
+    "pret": "",
+    "more_about_aiesec":"More about aiesec?"
   }
-}
+  }

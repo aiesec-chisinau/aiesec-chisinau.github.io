@@ -28,6 +28,7 @@ import Apply_demo from "./pages/demo/Apply_demo";
 //apply
 import Apply from "./pages/apply/Apply";
 import Thx from "./pages/thx/Thx";
+import Birthday from "./pages/birthday/Birthday";
 
 function App() {
   return (
@@ -43,6 +44,7 @@ function App() {
         <Route path="/thx" element={<Thx />} />
         // aplication
         <Route path="/apply" element={<Apply />} />
+        <Route path="/birthday" element={<Birthday/>} />
         <Route path="/apply/demo" element={<Apply_demo />} />
         //executive board info
         <Route path="/ebtwenties" element={<Soon />} />
