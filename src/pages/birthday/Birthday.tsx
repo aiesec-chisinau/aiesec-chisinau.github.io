@@ -46,39 +46,36 @@ const Birthday: React.FC = () => {
 
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
 
-
-
-
-
-      const googleFormsURL =
+    const googleFormsURL =
         "https://docs.google.com/forms/d/e/1FAIpQLSddFA4Qx9vU6NOFH9c_-YZIWSsehFMvAmTClG5M2xvMBm6Axw/formResponse";
 
-      const formDataEntries = Object.entries(formData);
-      const formDataSerialized = formDataEntries
+    const formDataEntries = Object.entries(formData);
+    const formDataSerialized = formDataEntries
         .map(
-          ([fieldName, value]) =>
-            `${encodeURIComponent(fieldName)}=${encodeURIComponent(value)}`,
+            ([fieldName, value]) =>
+                `${encodeURIComponent(fieldName)}=${encodeURIComponent(value)}`,
         )
         .join("&");
 
-      fetch(googleFormsURL, {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/x-www-form-urlencoded",
-        },
-        body: formDataSerialized,
-      })
+    fetch(googleFormsURL, {
+      method: "POST",
+      mode: "no-cors",
+      headers: {
+        "Content-Type": "application/x-www-form-urlencoded",
+      },
+      body: formDataSerialized,
+    })
         .then(() => {
-          // Optionally, you can redirect the user to a thank-you page
-          // window.location = 'http://www.mydomain.com/thankyoupage.html';
+          // Redirect the user to a thank-you page
+          window.location.href = "/#/thx";
         })
         .catch((error) => {
           console.error("Error submitting the form:", error);
         });
-      window.location.href = "/#/thx";
-
   };
+
 
   const onClickLanguageChange = () => {
     const storedLanguage = localStorage.getItem("i18nextLng");
