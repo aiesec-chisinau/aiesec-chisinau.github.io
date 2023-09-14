@@ -58,7 +58,9 @@
 .apply_div3_title_gray {
   color: #c5c2c2;
 }
-
+.apply_div3_title_dark_gray{
+  color: #8d8d8d;
+}
 .apply_check_div {
   display: flex;
   align-items: center;

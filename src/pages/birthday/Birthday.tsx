@@ -15,6 +15,7 @@ const Birthday: React.FC = () => {
     "entry.115540770": "",
     "entry.1381443748": "",
     "entry.1598958361": "",
+    "entry.206120275":""
 
   });
 
@@ -116,19 +117,51 @@ const Birthday: React.FC = () => {
             {t("birthday.about")}{" "}
             <span className="apply_div3_title_gray">:</span>
             <br/><br/>
-            &nbsp;&nbsp;&nbsp;<span className="apply_div3_title_gray">
+            &nbsp;&nbsp;&nbsp;<span className="apply_div3_title_dark_gray">
                Hey, AIESEC 👋
             </span><br/><br/>
             &nbsp;&nbsp;&nbsp;
-            <span className="apply_div3_title_gray">
+            <span className="apply_div3_title_dark_gray">
                {t("birthday.what_is1")}
             </span><br/>
 
             &nbsp;&nbsp;&nbsp;
-            <span className="apply_div3_title_gray">
+            <span className="apply_div3_title_dark_gray">
                {t("birthday.what_is2")}
-            </span><br/><br/>
-            <span className="apply_div3_title_gray">
+            </span><br/>
+            <br/>
+
+
+
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_dark_gray">
+               <b>{t("birthday.when")}</b> {t("birthday.date")}
+            </span><br/>
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_dark_gray">
+               <b>{t("birthday.location")}</b> {t("birthday.place")}
+            </span>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_dark_gray">
+               <b>{t("birthday.beggining")}</b> {t("birthday.hout_official")}
+            </span>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_dark_gray">
+               <b>{t("birthday.pret_text")}</b> {t("birthday.pret")}
+            </span>
+            <br/>
+            &nbsp;&nbsp;&nbsp;
+            <span className="apply_div3_title_dark_gray">
+               <b>{t("birthday.dresscode")}</b> {t("birthday.gatsby")}
+            </span>
+            <br/><br/>
+            <span className="apply_div3_title_dark_gray">
+               {t("birthday.more_details")} <b> Istrati Vlada <a style={{color:"#037ef3"}} href="mailto:vlada.istrati@aiesec.net">vlada.istrati@aiesec.net</a> </b>
+            </span>
+            <br/><br/>
+            <span className="apply_div3_title_dark_gray">
                {t("birthday.what_is3")}
             </span>
             <br/><br/>
@@ -162,7 +195,8 @@ const Birthday: React.FC = () => {
                     )
                 }
             />
-            <span id="apply_check_option1">{t("birthday.informal")}</span>
+            <span className="apply_div3_title_dark_gray" id="apply_check_option1"><b>{t("birthday.informal2")}</b>
+              {t("birthday.informal1")}</span>
           </div>
           <div className="apply_check_div">
             <input
@@ -178,7 +212,8 @@ const Birthday: React.FC = () => {
                 )
               }
             />
-            <span id="apply_check_option2">{t("birthday.offical")}</span>
+            <span className="apply_div3_title_dark_gray" id="apply_check_option2"><b>{t("birthday.offical2")}</b>
+              {t("birthday.offical1")}</span>
           </div>
           <div className="apply_check_div">
             {" "}
@@ -195,7 +230,7 @@ const Birthday: React.FC = () => {
                     )
                 }
             />
-            <span id="apply_check_option1">{t("birthday.want_to_help")}</span>
+            <span className="apply_div3_title_dark_gray" id="apply_check_option1">{t("birthday.want_to_help")}</span>
           </div>
 
         </div>
@@ -212,7 +247,7 @@ const Birthday: React.FC = () => {
                 name="entry.1959765168"
                 value={formData["entry.1959765168"]}
                 onChange={handleInputChange}
-                placeholder="---------- ---------"
+
               />
               <div className="apply_form_input_name2">
                 <span className="apply_form_label">
@@ -222,7 +257,25 @@ const Birthday: React.FC = () => {
                 </span>
               </div>
             </div>
+            <div className="apply_input_div_row">
+              <input
 
+                  className="apply_form_group"
+                  id="206120275"
+
+                  name="entry.206120275"
+                  value={formData["entry.206120275"]}
+              onChange={handleInputChange}
+                  placeholder={t<string>("birthday.noreq")}
+              />
+              <div className="apply_form_input_name2">
+                <span className="apply_form_label">
+                  {" "}
+                  &nbsp;&nbsp; {t("birthday.cq")}&nbsp;
+                  &nbsp;&nbsp;
+                </span>
+              </div>
+            </div>
 
             <input type="hidden" name="fvv" value="1" />
             <input type="hidden" name="fbzx" value="-7927717424726547255" />
@@ -248,8 +301,30 @@ const Birthday: React.FC = () => {
             <div className="apply_qandq">
               {t("birthday.more_about_aiesec")}{" "}
               <Link
-                to="https://wiki.aiesec.md/"
-                className="apply_blue_txt"
+                  to="https://wiki.aiesec.md/"
+                  className="apply_blue_txt"
+              >
+                {t("apply.here")}
+              </Link>
+            </div>
+          </div>
+          <div className="apply_questions">
+            <div className="apply_qandq">
+              {t("birthday.how_dress")}{" "}
+              <Link
+                  to="https://flapperboutique.com/blogs/news/how-to-dress-for-a-great-gatsby-party"
+                  className="apply_blue_txt"
+              >
+                {t("apply.here")}
+              </Link>
+            </div>
+          </div>
+          <div className="apply_questions">
+            <div className="apply_qandq">
+              {t("birthday.bernard")}{" "}
+              <Link
+                  to="https://maps.app.goo.gl/gK4svpKoWFW4xShz5"
+                  className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
