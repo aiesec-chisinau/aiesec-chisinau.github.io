@@ -121,6 +121,46 @@
     "get_link": "Cum să obțin linkul contului meu de social media?",
     "here": "aici",
     "what": "Ce este AIESEC?",
-    "why": "De ce ar trebui sa aplic?"
+    "why": "De ce ar trebui sa aplic?",
+
+    "uni": "Universitatea/Scoala",
+    "why_apply": "De ce AIESEC?",
+    "why_apply_inside": "De ce vrei să înveți din aderarea la AIESEC?",
+    "what_choices": "Ce vrei să înveți din alegerile tale?",
+    "what_choice": "Ce vrei să înveți?",
+    "how_sm": "Cum ați aflat despre această recrutare de membri?"
+  },
+  "birthday": {
+    "namesurname": "Nume Prenume",
+    "about": "Despre @Birthday",
+    "invitation": "Esti invitat 🎉",
+    "come": "Unde vrei sa vii?",
+    "informal1": " (after party)",
+    "informal2": "Informal ",
+    "offical1": "Oficiala (",
+    "offical2": "Partea ",
+    "want_to_help": "Vreau sa ajut",
+    "apply_btn": "Trimite",
+    "what_is1": "Suntem bucuroși să vă invităm în cadrul aniversării de 15 ani a AIESEC în Chișinău.",
+    "what_is2": "Mai jos atașată este invitația cu toate detaliile organizatorice. Vă așteptăm cu mare drag!",
+    "what_is3": "P.S. Completând formularul de mai jos, confirmați prezența în cadrul evenimentului!",
+    "pret_text": "Pret :",
+    "pret": "350 lei",
+    "more_about_aiesec":"Mai multe despre AIESEC?",
+    "location": "Locatia : ",
+    "place": "Bernardazzi Grand Hotel",
+    "beggining": "Inceputul at :",
+    "hout_official": "17:30 ",
+    "dresscode": "Dress code :",
+    "gatsby": "Stilul anilor 20 (Great Gatsby)",
+    "when": "Cand :",
+    "date": "September 23, 2023",
+    "more_details": "Pentru mai multe detalii va rugam sa contactati LCVP TM - ",
+    "how_dress": "Cum să te îmbraci pentru Great Gatsby Party?",
+    "bernard": "Unde este Bernardazzi Grand Hotel?",
+    "cq": "Comentarii / Intrebari",
+    "noreq":"poti sa ne contactezi aici"
+
+
   }
 }
