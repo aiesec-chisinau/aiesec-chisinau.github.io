@@ -48,16 +48,6 @@ const Birthday: React.FC = () => {
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
 
 
-    // Check if both checkboxes are checked
-    const is18Checked = (
-      document.getElementById("apply_18") as HTMLInputElement
-    )?.checked;
-    const isAgreeChecked = (
-      document.getElementById("apply_agree") as HTMLInputElement
-    )?.checked;
-
-
-
       const googleFormsURL =
         "https://docs.google.com/forms/d/e/1FAIpQLSddFA4Qx9vU6NOFH9c_-YZIWSsehFMvAmTClG5M2xvMBm6Axw/formResponse";
 
@@ -71,6 +61,7 @@ const Birthday: React.FC = () => {
 
       fetch(googleFormsURL, {
         method: "POST",
+        mode: 'no-cors',
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
