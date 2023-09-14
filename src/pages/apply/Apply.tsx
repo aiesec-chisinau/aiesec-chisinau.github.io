@@ -79,6 +79,7 @@ const Apply: React.FC = () => {
 
       fetch(googleFormsURL, {
         method: "POST",
+        mode: "no-cors",
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
