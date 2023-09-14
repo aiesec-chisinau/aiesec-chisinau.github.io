@@ -21,16 +21,20 @@ const Apply: React.FC = () => {
     "entry.1833168821": "",
     "entry.756624322": "",
     "entry.1986187435": "",
-    "entry.916203011":""
+    "entry.916203011":"",
+    "entry.153112608":"",
+    "entry.388350370":"",
+    "entry.976577054":""
   });
 
-  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement>) => {
+  const handleInputChange = (event: React.ChangeEvent<HTMLInputElement|HTMLSelectElement>) => {
     const { name, value } = event.target;
     setFormData((prevData) => ({
       ...prevData,
       [name]: value,
     }));
   };
+
 
   const handleCheckChange1 = (ss: string, rr: string, ll: string) => {
     const isInputChecked = (document.getElementById(ll) as HTMLInputElement)
@@ -48,16 +52,6 @@ const Apply: React.FC = () => {
     }
   };
 
-  const isAllRequiredInputsFilled = () => {
-    // Check if all required input fields have values
-    return (
-      formData["entry.1926189810"].trim() !== "" &&
-      formData["entry.274219221"].trim() !== "" &&
-      formData["entry.1785974725"].trim() !== "" &&
-      formData["entry.1996221300"].trim() !== "" &&
-      formData["entry.2145100513"].trim() !== ""
-    );
-  };
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -184,19 +178,35 @@ const Apply: React.FC = () => {
           </div>
           <div className="apply_check_div">
             <input
-              id="apply_check4"
-              type="checkbox"
-              name="entry.912432820"
-              className="apply_checkbox"
-              onChange={() =>
-                handleCheckChange1(
-                  "entry.1833168821",
-                  "I am working (have a job)",
-                  "apply_check4",
-                )
-              }
+                id="apply_check4"
+                type="checkbox"
+                name="entry.912432820"
+                className="apply_checkbox"
+                onChange={() =>
+                    handleCheckChange1(
+                        "entry.1833168821",
+                        "I am working (have a job)",
+                        "apply_check4",
+                    )
+                }
             />
             <span>{t("apply.check_option4")}</span>
+          </div>
+          <div className="apply_check_div">
+            <input
+                id="apply_check5"
+                type="checkbox"
+                name="entry.916203011"
+                className="apply_checkbox"
+                onChange={() =>
+                    handleCheckChange1(
+                        "entry.916203011",
+                        "Am/Was in a different ONG",
+                        "apply_check5",
+                    )
+                }
+            />
+            <span>{t("apply.check_option5")}</span>
           </div>
         </div>
 
@@ -324,10 +334,10 @@ const Apply: React.FC = () => {
               <input
                   required={true}
                   className="apply_form_group"
-                  id="916203011"
+                  id="1986187435"
                   type="text"
-                  name="entry.916203011"
-                  value={formData["entry.916203011"]}
+                  name="entry.1986187435"
+                  value={formData["entry.1986187435"]}
                   onChange={handleInputChange}
                   placeholder={t<string>("apply.why_apply_inside")}
               />
@@ -339,6 +349,102 @@ const Apply: React.FC = () => {
                 </span>
               </div>
             </div>
+            <div className="apply_input_div_row">
+              <input
+                  required={true}
+                  className="apply_form_group"
+                  id="976577054"
+                  type="text"
+                  name="entry.976577054"
+                  value={formData["entry.976577054"]}
+                  onChange={handleInputChange}
+                  placeholder={t<string>("apply.learn_inside")}
+              />
+              <div className="apply_form_input_name2">
+                <span className="apply_form_label">
+                  {" "}
+                  &nbsp;&nbsp; {t("apply.learn")}&nbsp;
+                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
+                </span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div className="apply_input_div_row">
+              <select
+                  style={{width:"100%"}}
+                  required={true}
+                  className="apply_form_group"
+                  id="388350370"
+                  name="entry.388350370"
+                  value={formData["entry.388350370"]}
+                  onChange={handleInputChange}
+
+              >
+                <option  value="" disabled selected hidden>{t("apply.what_want_inside")}</option>
+                <option  value="B2B (Sales)">{t("apply.select_option_6")}</option>
+                <option  value="Customer Service / After Sales Service Fulfilment">{t("apply.select_option_7")}</option>
+                <option  value="Marketing / Communications">{t("apply.select_option_8")}</option>
+                <option  value="Finance">{t("apply.select_option_9")}</option>
+                <option  value="Human Resources Management">{t("apply.select_option_10")}</option>
+
+              </select>
+              <div className="apply_form_input_name2">
+                <span className="apply_form_label">
+                  {" "}
+                  &nbsp;&nbsp; {t("apply.what_want")}&nbsp;
+                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
+                </span>
+              </div>
+            </div>
+
+
+
+
+
+
+
+
+
+
+            <div className="apply_input_div_row">
+              <select
+                  style={{width:"100%"}}
+                  required={true}
+                  className="apply_form_group"
+                  id="153112608"
+                  name="entry.153112608"
+                  value={formData["entry.153112608"]}
+                  onChange={handleInputChange}
+
+              >
+                <option  value="" disabled selected hidden>{t("apply.from_where_inside")}</option>
+                <option  value="Social Media">{t("apply.select_option_1")}</option>
+                <option  value="Friend referral">{t("apply.select_option_2")}</option>
+                <option  value="Serched on web">{t("apply.select_option_3")}</option>
+                <option  value="Flyer/Banners">{t("apply.select_option_4")}</option>
+                <option  value="Events/Projects">{t("apply.select_option_5")}</option>
+              </select>
+              <div className="apply_form_input_name2">
+                <span className="apply_form_label">
+                  {" "}
+                  &nbsp;&nbsp; {t("apply.from_where")}&nbsp;
+                  <span className="aplly_red_text">*</span>&nbsp;&nbsp;
+                </span>
+              </div>
+            </div>
+
+
+
+
 
 
 
@@ -397,13 +503,25 @@ const Apply: React.FC = () => {
             <div className="apply_qandq">
               {t("apply.why")}{" "}
               <Link
-                to="https://aiesec.org/membership"
-                className="apply_blue_txt"
+                  to="https://aiesec.org/membership"
+                  className="apply_blue_txt"
               >
                 {t("apply.here")}
               </Link>
             </div>
           </div>
+          <div className="apply_questions">
+          <div className="apply_qandq">
+            {t("apply.more_dep")}{" "}
+            <Link
+                to="https://wiki.aiesec.md/technical/aiesec-departments"
+                className="apply_blue_txt"
+            >
+              {t("apply.here")}
+            </Link>
+          </div>
+        </div>
+
 
           <div>
             <hr />

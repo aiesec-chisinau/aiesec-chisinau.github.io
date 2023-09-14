@@ -101,6 +101,7 @@
     "check_option2": "I study at university",
     "check_option3": "I live in Chisinau",
     "check_option4": "I am working (have a job)",
+    "check_option5": "Am/Was in a different ONG",
     "check_18": "Yes, I’m 18 or older",
     "check_agree": "Yes, I allow AIESEC in Chisinau to collect, process and use my personal data.",
     "post_send": "By submitting this form, you consent to the lawful processing of your personal data in compliance with international data protection laws and regulations, including but not limited to the General Data Protection Regulation (GDPR) and other relevant standards.",
@@ -117,7 +118,27 @@
     "why_apply_inside": "Why do you wish to learn from joining AIESEC?",
     "what_choices": "What do you wish to learn from your choices?",
     "what_choice": "What do you wish to learn?",
-    "how_sm": "How did you get to know about this membership recruitment?"
+    "how_sm": "How did you get to know about this membership recruitment?",
+    "from_where": "From where?",
+    "from_where_inside": "How did you heard about this recruitment?",
+    "select_option_1": "Social Media",
+    "select_option_2": "Friend referral",
+    "select_option_3": "Serched on web",
+    "select_option_4": "Flyer/Banners",
+    "select_option_5": "Events/Projects",
+    "what_want": "Select a Department",
+    "what_want_inside": "Which area are you most interested to explore",
+    "select_option_6":"B2B (Sales)",
+    "select_option_7":"Customer Service / After Sales Service Fulfilment",
+    "select_option_8":"Marketing / Communications",
+    "select_option_9":"Finance",
+    "select_option_10":"Human Resources Management",
+    "more_dep": "More about AIESEC departments",
+    "learn": "Describe yourself",
+    "learn_inside": "Write a short description abut you"
+
+
+
   },
   "birthday": {
     "namesurname": "Name Surname",
@@ -149,6 +170,7 @@
     "bernard": "Where is Bernardazzi Grand Hotel?",
     "cq": "Comments / Questions",
     "noreq":"you can contact us here"
+
 
 
   }

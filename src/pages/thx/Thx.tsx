@@ -12,7 +12,7 @@ const Thx: React.FC = () => {
   return (
     <div id="thx_bg">
       &nbsp;
-      <Link id="thx_goback" to="/">
+      <Link id="thx_goback" to="/soon">
         <svg
           id="thx_svg_1"
           xmlns="http://www.w3.org/2000/svg"
