@@ -46,6 +46,9 @@ const Birthday: React.FC = () => {
 
 
   const handleSubmit = (event: React.FormEvent<HTMLFormElement>) => {
+    event.preventDefault();
+
+
 
 
       const googleFormsURL =
@@ -61,7 +64,6 @@ const Birthday: React.FC = () => {
 
       fetch(googleFormsURL, {
         method: "POST",
-        mode: 'no-cors',
         headers: {
           "Content-Type": "application/x-www-form-urlencoded",
         },
